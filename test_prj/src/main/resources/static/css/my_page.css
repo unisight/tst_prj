@@ -1,0 +1,363 @@
+@charset "UTF-8";
+/*----------------------------------
+共通CSS
+-----------------------------------*/
+
+body{
+	color:#222;
+	width:100%;
+	min-width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.container{
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+}
+
+p.my_name{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#002e5b;
+	font-size:22px;
+	margin-bottom:15px;
+}
+
+.container a:link,.container a:visited {
+    color:#0f5294;
+    text-decoration: none;
+}
+
+.container a:hover{
+    color:#FF5F00;
+    text-decoration:underline;
+}
+
+@media screen and (max-width: 767px){
+	body{
+		min-width:100%;
+		height:auto;
+	}
+	
+	p.my_name{
+	width:100%;
+	margin-left:2.5%;
+	margin-bottom:15px;
+	font-size:18px;
+	font-weight:bold;
+	}
+
+}
+
+/*--------------------------------------------
+スケジュール表
+---------------------------------------------*/
+
+.schedule_box{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.schedule_title:before{
+	font-family: FontAwesome;
+	content:"\f073";
+	position:relative;
+	top:3px;
+	font-size:35px;
+	letter-spacing:10px;
+}
+
+.schedule_box p{
+	color:#002e5b;
+	font-size:28px;
+	font-weight:bold;
+	margin-bottom:7px;
+}
+
+.schedule_box th{
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.schedule_box td{
+	font-size:12px;
+	width:14.2%;
+	border:1px #000 solid;
+	background-color:#eee;
+}
+
+.schedule_table_top tr.plan_bar_area{
+	height:105px;
+	width:100%;
+}
+
+.schedule_box .plan_bar1{	/*予定バーの位置(高さ)*/
+	margin-top:5px;
+	padding:3px 8px;
+	
+}
+
+.schedule_box .plan_bar2{
+	margin-top:30px;
+	margin-bottom:7px;
+	padding:3px 8px;
+}
+
+.schedule_box .light_blue{
+	background-color:#7ecef4;
+}
+
+.schedule_box .orange{
+	background-color:#f39800;
+}
+
+td.plan{
+	background-color:#fff;
+}
+
+th.today{
+	color:#FF0004;
+	font-size:16px;
+}
+
+td.today{
+	background-color:#fde8e8;
+}
+
+.schedule_box table.schedule_table_top{
+	margin-bottom:10px;
+}
+
+.schedule_table_bottom td{
+	padding:30px 0px 30px 5px;
+	min-height:100px;
+}
+
+@media screen and (max-width: 767px){
+
+.schedule_title:before{
+	font-family: FontAwesome;
+	content:"\f073";
+	font-size:26px;
+	letter-spacing:10px;
+}
+
+.schedule_box{
+	width:100%;
+	margin:0px;
+}
+
+.schedule_list_box{
+	background-color:#dddddd;
+	width:100%;
+	padding:10px 0px;
+}
+
+.schedule_list{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.schedule_box p{
+	color:#002e5b;
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.schedule_list dl{
+	margin:30px 0px;
+}
+
+.schedule_list dt{
+	border-bottom:1px #000 dashed;
+	margin-bottom:0px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.schedule_list dd{
+	margin:5px 10px 10px 10px;
+	font-size:14px;
+	height:20px;
+}
+
+.schedule_list dl.today dt{
+	color:#EC3134;
+}
+
+
+}
+/*--------------------------------------------
+連絡帳
+---------------------------------------------*/
+.notebook_box{
+	width:100%;
+	background-color:#dddddd;
+	padding:20px 0;
+	margin-top:30px;
+}
+.notebook_body{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.notebook_box strong{
+	color:#002e5b;
+	font-size:26px;
+	font-weight:bold;
+}
+
+.notebook_body .boder{
+	width:980px;
+	border-top:1px #000 dashed;
+}
+
+.notebook_body img{
+	margin:0px 10px -5px 2px;
+}
+
+.notebook_body dl{
+	padding:8px 10px;
+}
+
+.notebook_body .data_time{
+	float:left;
+}
+
+.notebook_body dt.data_time{
+	padding-top:3px;
+}
+
+.notebook_body dd.data_time{
+	padding:7px 20px 0px 10px;
+}
+
+.notebook_body img.ballon{
+	width:29px;
+	height:25px;	
+}
+
+dt.data_time img{
+	width:30px;
+	height:30px;
+}
+
+@media screen and (max-width: 767px){
+	
+.text_link_button{
+	margin-bottom:40px;
+	padding-top:0px;
+}
+	
+.text_link_button.my_top{
+	margin-bottom:0px;
+}
+	
+.notebook_box{
+	background-color:#fff;
+	padding:0px;
+}
+	
+.notebook_body{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0px;
+}
+
+img.ballon{
+	float:left;
+}
+
+.notebook_body p{
+	font-size:20px;
+	margin-bottom:10px;
+	overflow: hidden;
+	desplay:block;
+	font-weight:bold;
+	color:#002e5b;
+}
+
+.notebook_body img.ballon{
+	max-width:30px;
+	max-height:28px;
+	min-width:30px;
+	min-height:28px;
+}
+
+img.read_check{
+	margin:0px;
+	padding:0px;
+}
+
+.sp_notebook_table{
+	width:100%;
+	font-size:14px;
+	float:left;
+	height:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height:18px;
+}
+
+.sp_notebook_contents{
+	margin:10px 0px;
+	height:auto;
+}
+
+
+th.icon_box{
+	margin:10px;
+	padding:10px;
+	max-width:auto;
+	min-width:43px;
+	height:20px;
+	float:left;
+	display:block;
+}
+
+th.icon_box img.read_check{
+
+	position:relative;
+	bottom:5px;
+}
+
+.sp_notebook_contents th{
+	margin:0px;
+	padding:0px;
+	
+}
+.sp_notebook_contents{
+	margin:0px;
+	padding:0px;
+	
+}
+
+td.text_box{
+	 padding-left:5%;
+}
+
+th.left_box{
+	padding-left:5%; 
+}
+
+th.light_box{
+	text-align:right;
+}
+
+.boder{
+	clear:both;
+}
+
+}
+

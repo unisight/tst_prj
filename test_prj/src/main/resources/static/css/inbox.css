@@ -1,0 +1,483 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-----------一覧リスト(連絡帳等)------------*/
+
+.top_border{
+	border-top:1px #000 dashed;	
+}
+
+.bottom_border_none{
+	border-bottom:none;
+}
+
+dl{
+	border-bottom:1px #000 dashed;
+	margin:0px;
+	height:auto;
+	padding:10px 10px;
+	vertical-align:middle;
+	overflow: hidden;
+	desplay:block;
+}
+
+dt{
+	margin-top:5px;
+	margin-left:5px;
+	background-repeat:no-repeat;
+	padding:14px 15px;
+	height:auto;
+	vertical-align:baseline;
+	overflow:visible;
+	desplay:block;
+}
+
+dt.midoku{
+	background-image:url(../img/pc/mypage/midoku.png);
+}
+
+dt.midoku p{
+	float:right;
+	background-color:#FF0004;
+	border-radius:10px;
+	padding:0 6px;
+	position:relative;
+	left:25px;
+	top:-20px;
+	font-size:14px;
+	color:#FFFFFF;
+	font-weight:bold;
+	display:inline;
+	letter-spacing:0px;
+}
+
+dt.kidoku{
+	background-image:url(../img/pc/mypage/kidoku.png);
+	height:48px;
+	width:48px;
+}
+
+dt.kidoku p{
+	display:none;
+}
+
+dd.left_dd{
+	height:auto;
+	margin-left:20px;
+	font-size:15px;
+	width:auto;
+	padding:14px 20px 15px 10px;
+	float:left;
+	font-weight:bold;
+	position:relative;
+	z-index:1;
+}
+
+dd.right_dd{
+	position:relative;
+	height:auto;
+	z-index:10;
+}
+
+dd.right_dd p{
+	margin-left:230px;
+	padding:3px 60px 0px 0px;
+}
+
+dd a{
+	display:block;
+	z-index:300;
+	width:980px;
+	height:auto;
+	min-height:55px;
+	margin-top:0px;
+	border-radius:5px;
+	vertical-align:central;
+}
+
+dd a:hover{
+	background-color:#fff;
+	opacity:0.4;
+	z-index:0;
+}
+.container dd a:hover{
+    color:#000;
+    text-decoration:underline;
+}
+
+@media screen and (min-width: 768px){
+dt{
+	float:left;
+	clear:left;
+	width:48px;
+	height:48px;
+}
+
+}
+
+@media screen and (max-width: 767px){
+	
+.my_contents{
+	padding:0 5%;
+}
+	
+dl{
+	padding:20px 0px;
+}
+
+dd.left_dd{
+		float:right;
+		position:relative;
+		padding:0px;
+		margin:0px;
+		height:20px;
+}
+	
+dt{
+	max-width:60px;
+	height:auto;
+	float:left;		
+}
+	
+dd a{
+	width:100%;
+}
+	
+dd.right_dd p{
+	margin-left:70px;
+	padding:0 5%;
+}
+	
+}
+
+/*----------連絡帳　メッセージ作成画面------------*/
+
+.my_title{
+	border-bottom:1px dashed #000;
+	padding-bottom:10px;
+}
+
+
+p.company_name{
+	height:50px;
+	font-size:24px;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	display:table-cell;
+	vertical-align:bottom;
+}
+
+.message_display_area{
+	margin-bottom:60px;
+}
+
+.company_message_flame{
+	width:100%;
+	height:auto;
+	padding:5px;
+	clear:both;
+	display:block;
+	overflow: hidden;
+	margin-top:30px;
+	position:relative;
+}
+
+.message_display_area p.date{
+	width:30%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:-20px;
+	font-size:18px;
+	border-radius:10px;
+	letter-spacing:1.5px;
+}
+
+.company_message_flame i.fa{
+	width:50px;
+	height:50px;
+	font-size:60px;
+	float:left;
+	margin-bottom:auto;
+	margin-top:15px;
+}
+
+.company_message_flame p.company_message_text{
+	font-size:16px;
+	position: relative;
+	background-color:#FFFFFF;
+	width:450px;
+	min-height:100px;
+	padding:15px 20px;
+	border-radius:10px;
+	float:left;
+	text-align:left;
+	margin-left:30px;
+	-webkit-box-shadow:rgb(160, 160, 160) 0px 2px 4px 1px;
+	-moz-box-shadow:rgb(160, 160, 160) 0px 2px 4px 1px;
+	box-shadow:rgb(160, 160, 160) 0px 2px 4px 1px;
+}
+
+.company_message_text:before{
+	right: 100%;
+	top: 49px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #aaa;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+
+.company_message_text:after{
+	right: 100%;
+	top: 47px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+.read_time{
+	display:inline;
+	margin-bottom:5px;
+	width:auto;
+	float:left;
+	margin-left:10px;
+	position: absolute;
+ 	bottom: 0;
+}
+
+@media screen and (max-width: 767px){
+	
+.message_display_area p.date{
+	width:100%;
+}
+
+	
+p.company_name{
+	height:50px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	display:table-cell;
+	vertical-align:bottom;
+}
+	
+.company_message_flame i.fa{
+	font-size:13vw;
+	width:16%;
+	float:left;
+}
+	
+.company_message_flame p.company_message_text{
+	font-size:16px;
+	width:70%;
+	float:left;
+	text-align:left;
+	margin:0px;
+}
+
+.read_time{
+	display:inline;
+	margin-bottom:5px;
+	width:auto;
+	float:right;
+	margin-left:10px;
+	position: absolute;
+ 	bottom: 0;
+	font-size:3vw;
+}
+
+
+
+}
+
+.student_message_flame{
+	width:100%;
+	height:auto;
+	padding:5px;
+	clear:both;
+	overflow: hidden;
+	margin-top:30px;
+	position:relative;
+}
+
+
+.student_message_flame i.fa{
+	width:50px;
+	height:50px;
+	font-size:60px;
+	float:right;
+	margin-bottom:auto;
+	margin-top:15px;
+}
+
+.student_message_flame p.student_message_text{
+	font-size:16px;
+	position: relative;
+	background-color:#52bef2;
+	width:450px;
+	min-height:100px;
+	padding:15px 20px;
+	border-radius:10px;
+	float:right;
+	text-align:left;
+	margin-right:30px;
+	-webkit-box-shadow:rgb(160, 160, 160) 0px 2px 4px 1px;
+	-moz-box-shadow:rgb(160, 160, 160) 0px 2px 4px 1px;
+	box-shadow:rgb(160, 160, 160) 0px 2px 4px 1px;
+}
+
+.student_message_flame p.read_check{
+	display:inline;
+	margin-bottom:5px;
+	width:auto;
+	text-align:left;
+	float:right;
+	position: absolute;
+ 	bottom: 0;
+	right:548px;
+}
+
+
+.student_message_text:before{
+	left: 100%;
+	top: 49px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #aaa;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+.student_message_text:after{
+	left: 100%;
+	top: 47px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #52bef2;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+
+@media screen and (max-width: 767px){
+	
+.student_message_flame i.fa{
+	font-size:13vw;
+	width:11%;
+}
+	
+	
+.student_message_flame p.student_message_text{
+	font-size:16px;
+	width:70%;
+	text-align:left;
+	margin:0px 5% 0 0;
+	float:right;
+}
+
+.student_message_flame p.read_check{
+	width:7%;
+	float:left;
+	margin-right:0px;
+	text-align:left;
+	white-space:nowrap;
+	font-size:3vw;
+	position: absolute;
+ 	bottom: 0;
+	right:0;
+	left:0;
+}
+
+	
+}
+
+.trans_button_area img{
+	text-align:right;
+	float:right;
+}
+
+/*---------メッセージ入力ボックス------------*/
+.text_input_area{
+	width:980px;
+}
+
+
+.input_textarea{
+	width:850px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+}
+
+.trans_button_area{
+	background-color:#fff;
+	border:1px #555 solid;
+	border-bottom:none;
+	width:850px;
+	height:40px;
+	font-size:16px;
+	padding:5px 7px 15px 7px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.text_input_area textarea{
+	width:850px;
+	height:160px;
+	font-size:17px;
+	padding:13px 10px;
+	border-color:#555;
+}
+
+@media screen and (max-width: 767px){
+
+
+.text_input_area{
+	width:100%;
+}
+
+.input_textarea{
+	width:100%;
+}
+
+.text_input_area textarea{
+	width:100%;
+}
+
+.trans_button_area{
+	width:100%;
+}
+
+.trans_button_area img{
+	min-width:auto;
+}
+
+}

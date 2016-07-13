@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*-----------------------------------
+共通CSS
+------------------------------------*/
+
+html{
+     background-color:#000; /*フッターの色を指定*/
+}
+
+body{
+	color:#222;
+	width:100%;
+	min-width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#fff;
+}
+
+.container{
+	background-color:#fff;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	padding-bottom:20vh;
+	margin-bottom:10vh;
+	width:100%;
+}
+
+.reset{
+	clear:both;
+}
+
+.fa{
+	margin-right:10px;
+}
+
+.container a:link,.container a:visited {
+    color:#0f5294;
+    text-decoration: none;
+}
+
+.container a:hover{
+    color:#FF5F00;
+    text-decoration:underline;
+}
+
+.faq_flame{
+	width:980px;
+	height:auto;
+	margin-top:40px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.fa-chevron-circle-down.right:before{
+	content: "\f13a";
+}
+
+.fa-chevron-circle-down.right.open:before{
+	content: "\f139";
+}
+
+
+.link_position_adjust{
+  margin-top : -91px;
+  padding-top : 91px;
+  z-index:0;
+  float:left;
+}
+
+@media (max-width: 767px) { 
+
+
+body{
+	min-width:100%;
+}
+
+img {
+  min-width:10px;
+}
+
+article{
+	padding-top:5vw;
+}
+
+.faq_flame{
+	width:100%;
+	margin-top:40px;
+}
+
+}
+
+/*-------------------------------------
+左メニュー
+---------------------------------------*/
+
+.faq_contents_left{
+	float:left;
+	width:320px;
+	position:fixed;
+	height:100%;
+	overflow:hidden;
+}
+
+.faq_title{
+	margin-bottom:10px;
+}
+
+.faq_title img{
+	float:left;
+	margin-right:10px;
+}
+
+.faq_title h3{
+	font-size:26px;
+	font-weight:bold;
+	color:#002e5b;
+	width:150px;
+	padding:0px;
+}
+
+.menu_left{
+	background-color:#002e5b;
+	color:#fff;
+	font-size:18px;
+	width:280px;
+	height:auto;
+	padding:20px 10px 5px 10px;
+	margin-bottom:10px;
+}
+
+.menu_left a:link,.menu_left a:visited {
+    color:#fff;
+    text-decoration: none;
+}
+
+.menu_left a:hover{
+    color:#ccc;
+    text-decoration:underline;
+}
+
+.side_link{
+	margin:10px 0px 10px 13px;
+}
+
+.side_link:hover,.side_button:hover{
+	cursor:pointer;
+}
+
+/*-------------------------------------
+右メニュー
+---------------------------------------*/
+
+.faq_contents_right{
+	width:660px;
+	height:auto;
+	float:right;
+	margin-top:30px;
+}
+
+.accordion_menu.click{
+	float:left;
+	z-index:1;
+	background-color:#554fb0;
+	cursor:pointer;
+	padding-top:0px;
+	padding-bottom:15px;
+	width:100%;
+	margin-bottom:5px;
+	vertical-align:middle;
+}
+
+.accordion_menu.click:hover{
+	opacity:0.8;
+}
+
+.accordion_menu.click span{
+	float:left;
+	color:#fff;
+	font-size:24px;
+	padding:22px 0px 0px 20px;
+}
+
+.accordion_menu.QandA{
+	display:none;
+	float:left;
+}
+
+.accordion_menu.contents{
+	width:100%;
+	height:auto;
+	float:left;
+}
+
+.fa-chevron-circle-down.right{
+	float:right;
+	text-align:right;
+	color:#fff;
+	font-size:35px;
+	font-weight:bold;
+	padding:17px 20px 0px 0px;
+}
+
+.Q_color{
+	font-size:26px;
+	color:#002e5b;
+	font-weight:bold;
+	margin-right:15px;
+}
+
+.A_color{
+	font-size:26px;
+	color:#5b1e00;
+	font-weight:bold;
+	margin-right:20px;
+	float:left;
+	height:auto;
+}
+
+.answer .A_text{
+	padding-left:39px;
+	padding-right:3px;
+	width:100%;
+	margin-bottom:20px;
+}
+
+.accordion_menu.QandA{
+	width:660px;
+}
+
+.accordion_menu.contents .question{
+	background-color:#ddd;
+	font-size:18px;
+	border:1px #BBB solid;
+	padding:10px 20px;
+}
+
+.accordion_menu.contents .answer{
+	padding-top:10px;
+	padding-left:20px;
+}
+
+.manual{
+	background-color:#ddd;
+	font-size:18px;
+	border:1px #BBB solid;
+	padding:20px 13px;
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+.manual:hover{
+	background-color:#eee;
+}
+
+
+.manual img{
+	width:48px;
+	height:48px;
+	margin-top:-10px;
+	float:left;
+}
+
+@media (max-width: 767px) { 
+.faq_contents_left{
+	width:0px;
+	}
+
+.faq_contents_right{
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top:30px;
+}
+
+.faq_title_sp{
+	margin-bottom:15px;
+}
+
+.faq_title_sp img{
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.faq_title_sp h3{
+	float:left;
+	font-size:6.5vw;
+	font-weight:bold;
+	color:#002e5b;
+	width:150px;
+	padding:0px;
+	margin-bottom:15px;
+}
+
+.accordion_menu.click span{
+	font-size:5vw;
+}
+
+.fa-chevron-circle-down.right{
+	color:#fff;
+	font-size:35px;
+	font-weight:bold;
+	padding:17px 10px 0px 0px;
+}
+
+.accordion_menu.QandA{
+	width:100%;
+}
+
+
+}
+
+/*--------------------------------------
+フッター
+----------------------------------------*/
+
+footer{
+	margin-top:0;
+}
+

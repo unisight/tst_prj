@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------
+共通CSS
+------------------------------*/
+html{
+
+}
+
+body{
+	color:#222;
+    width:100%;
+	min-width:980px;
+	max-height:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+}
+
+.container{
+	width:100%;
+	padding-top:60px;
+	background-color:#fff;
+	height:auto;
+	min-height:auto;
+}
+
+.gray{
+	background-color:#eee;
+}
+
+@media (max-width: 767px) {
+    body{
+        min-width:100%;
+    }
+	
+		.container{
+		height:auto;
+		margin-top:40px;
+		min-height:50vh;
+	}
+
+}
+
+
+/*--------------------------------
+お問い合わせ
+---------------------------------*/
+.contact_title{
+	width:980px;
+	background-color:#554fb0;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.contact_title h2{
+	color:#fff;
+	font-size:26px;
+	font-weight:bold;
+	padding:23px 18px 19px 18px;
+}
+
+.form_flame{
+	width:100%;
+	height:auto;
+	background-color:#fff;
+	line-height:23px;
+}
+
+.input_box{
+	width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-top:15px;
+	font-size:16px;
+}
+
+
+.input_contents{
+	padding:30px 0px 30px 15px;
+	clear:both;
+}
+
+.input_contents .contents_name_area{
+	width:225px;
+	float:left;
+	margin-right:15px;
+}
+
+.input_contents strong{
+	text-align:left;
+	float:left;
+}
+
+span.float{
+	display:inline-block;
+	width:51px;
+	margin:0px;
+	padding:0px 0px 10px 7px;
+	white-space:normal;
+}
+
+span.float:after{
+	content:":";
+	text-align:right;
+	width:auto;
+	margin-left:5px;
+}
+
+
+
+.input_contents img.required{
+	text-align:right;
+	float:right;
+	padding:5px 0px 5px 10px;
+	vertical-align:baseline;
+	vertical-align:middle;
+	
+}
+
+.input_box input.input_text{
+	font-size:15px;
+	height:27px;
+	margin:1px 8px;
+}
+
+
+
+.input_box select{
+	font-size:15px;
+	height:32px;
+	width:300px;
+	margin:3px 8px;
+
+	
+	/* border-radius */
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	
+	/* border */
+	border:1px solid #cccccc;
+}
+
+input.width1{
+	width:200px;
+}
+	
+input.width2{
+	width:56.5%;
+}
+
+.red_text{
+	color:#FF0004;
+	font-size:14px;
+	margin-left:21%;
+}
+
+img.required.row3{
+	padding-bottom:50px;
+}
+
+.contents_anser_area textarea{
+	width:62%;
+	height:180px;
+}
+
+/*確認ボタン*/
+
+.single_button_box{
+	width:35%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:65px;
+}
+
+
+@media (max-width: 767px) { 
+
+.contact_title{
+	width:100%;
+}
+
+.contact_title h2{
+	font-size:18px;
+}
+
+	.form_flame{
+	background-color:#fff;
+	}
+	
+	.input_box strong{
+		font-size:16px;
+		margin-right:5px;
+		color:#002e5b;
+		font-weight:bold;
+	}
+
+span.float{
+	float:left;
+	width:100%;
+}
+	
+	.input_button{
+		width:50%;
+		height:40px;
+		font-size:18px;
+	}
+	
+	.input_box .input_button.search{
+		margin-left:0px;
+		margin-top:10px;
+		margin-bottom:10px;
+		font-size:16px;
+	}
+	
+	.input_contents{
+		width:100%;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:3.5%;
+		padding-right:3.5%;
+	}
+	
+	.input_contents p{
+		margin-top:0px;
+		margin-bottom:0px;
+		font-size:14px;
+	}
+	
+	.contents_anser_area{
+		clear:both;
+	}
+	
+	.input_contents .contents_name_area.low_2{
+		height:30px;
+	}
+	
+	
+	input.width1{
+		width:90%;
+	}
+	
+	input.width2{
+		width:90%;
+	}
+
+	
+	.input_contents .contents_name_area{
+		width:auto;
+		clear:both;
+	}
+	
+	.input_box label{
+		margin:0px;
+		padding:0px;
+	}
+
+.radio_box th.left{
+	width:20%;
+	white-space: nowrap;
+}
+
+	.input_box img.required{
+		min-height:20px;
+		min-width:40px;
+		position:relative;
+		bottom:5px;
+	}
+
+	.input_box{
+		width:100%;
+		height:auto;
+		margin-bottom:15px;
+	}
+	
+	.input_box input.input_text{
+		height:30px;
+		font-size:19px;
+		margin-left:3px;
+		margin-right:3px;
+		margin-top:0px;
+		margin-bottom:5px;
+	}
+	
+	.input_box select{
+		height:40px;
+		width:260px;
+		font-size:12px;
+		margin:8px 0px 8px 0px;
+	}
+
+	p.kakunin{
+	font-size:14px;
+	color:#FF0004;
+	}
+
+.red_text{
+	margin-left:0;
+}
+
+img.required.row3{
+	padding-bottom:0px;
+}
+
+.contents_anser_area textarea{
+	width:100%;
+}
+
+/*確認ボタン*/
+
+.comp_button{
+	padding:60px 5% 0 5%;
+}
+
+}
+
+@media (max-width: 400px) { 
+/*画面幅の小さいデバイス対策*/
+.radio_box{
+	font-size:4.5vw;
+}
+
+}
+
+/*----------------------------------------------
+お問い合わせ確認画面
+-----------------------------------------------*/
+
+.conf_text{
+	font-size:16px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+.anser_text{
+	margin-right:40px;
+	font-size:16px;
+	font-weight:bold;
+	min-width:170px;
+	overflow: hidden;
+	display:block;
+	float:left;
+}
+
+.name{
+	margin-left:20px;
+}
+
+.conf span.float{
+	width:45px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+.height_adjust{
+	margin-top:8px;
+}
+
+@media (max-width: 767px) {
+
+.height_adjust{
+	margin-top:0px;
+}
+
+.anser_text{
+	margin-right:40px;
+	font-size:16px;
+	font-weight:bold;
+	min-width:170px;
+	overflow: hidden;
+	display:block;
+	float:left;
+}
+
+.conf span.float{
+	clear:both;
+}
+
+img.required.row3{
+	display:none;
+}
+
+}
+

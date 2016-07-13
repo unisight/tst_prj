@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* body
+------------------------------------------------------------*/
+
+.mv{
+	height: auto;
+	position:relative;
+	z-index:50;
+}
+
+body{
+	background-attachment:scroll;
+	min-width:980px;
+}
+
+li.slick-slide{
+	width:256px;
+}
+
+
+@media (max-width: 767px) {
+    body{
+        min-width:100%;
+    }
+	
+	article{
+		margin-top:50px;
+	}
+}
+
+

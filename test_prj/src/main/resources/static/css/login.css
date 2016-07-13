@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------
+共通CSS
+------------------------------*/
+html{
+background-color:#000000;
+}
+
+body{
+	width:100%;
+    min-width:980px;
+	height:auto;
+	margin-right: auto;
+	margin-left : auto;
+	background-color:#FFFFFF;
+}
+
+.container{
+	width:100%;
+	padding-top:60px;
+	background-color:#fff;
+	height:auto;
+}
+
+.red_text{
+	color:#FF0004;
+}
+
+@media (max-width: 767px) {
+    body{
+        min-width:100%;
+    }
+	
+	.container{
+	height:auto;
+	padding-top:40px;
+	min-height:50vh;
+	}
+
+}
+
+
+/*--------------------------------
+メインコンテンツ
+---------------------------------*/
+.login_title{
+	width:980px;
+	background-color:#554fb0;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.login_title h2{
+	color:#fff;
+	font-size:26px;
+	font-weight:bold;
+	padding:23px 18px 19px 18px;
+}
+
+
+.login_contents{
+	max-width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	border:none;
+	margin-bottom:0px;
+	padding:25px;
+	padding-left:0px;
+	padding-right:0px;
+	line-height:20px;
+}
+
+.setumei{
+	font-size:16px;
+	margin-bottom:50px;
+	padding-left:20px;
+}
+
+.login_contents_box{
+	height:auto;
+}
+
+.login_input_contents{
+	clear:both;
+	height:auto;
+}
+
+.login_contents input.text{
+	padding-top:5px;
+	padding-bottom:5px;
+	width:320px;
+}
+
+.auto_login{
+	text-align:left;
+	width:30%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+	font-size:14px;
+}
+
+.auto_login.login2{
+	width:100%;
+	text-align:center;
+	font-size:14px;
+}
+
+.auto_login input{
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	margin-right:10px;
+}
+
+.login_button{
+	text-align:center;
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+@media screen and (max-width: 768px){
+
+.login_contents_box{
+	overflow: hidden;
+	desplay:block;
+	margin-bottom:20px;
+}
+	
+.setumei{
+	margin-bottom:0px;
+	padding-left:5px;
+	padding-top:5px;
+}
+
+.login_title{
+	width:100%;
+}
+
+.login_title h2{
+	font-size:18px;
+}
+
+.login_contents{
+	width:100%;
+	padding:5%;
+	margin-bottom:0px;
+}
+
+.login_input_contents input{
+	width:98%;
+	height:30px;
+	font-size:19px;
+	margin-left:3px;
+	margin-right:3px;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+.login_input_contents{
+	width:100%;
+	padding-top:15px;
+	padding-bottom:10px;
+	padding-left:3.5%;
+	padding-right:0;
+}
+
+.auto_login{
+	width:95%;
+	text-align:center;
+	font-size:16px;
+	margin-bottom:30px;
+}
+
+.auto_login input{
+	-webkit-transform: scale(2);
+	transform: scale(2);
+}
+
+
+.login_button{
+	width:90%;
+}
+
+
+}
+
+
+/*----------------------------------------------
+ＩＤ・パスワードの問い合わせ
+----------------------------------------------*/
+
+.inquiry_contents{
+	width:560px;
+	height:55px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow: hidden;
+}
+
+.inquiry_contents.id{
+	overflow: hidden;
+}
+
+p.inquiry_text{
+	width:158px;
+	float:left;
+	height:auto;
+	margin-right:20px;
+	padding-top:5px;
+	font-weight:bold;
+	text-align:right;
+}
+
+.inquiry_contents input{
+	float:left;
+	height:auto;
+}
+
+
+.inquiry_contents_box{
+	width:100%;
+	height:auto;
+}
+
+@media screen and (max-width: 768px){
+	
+.inquiry_contents{
+	width:100%;
+	height:auto;
+	padding-left:3.5%;
+	padding-right:3.5%;
+}
+
+.inquiry_contents.id{
+	margin-top:15px;
+	margin-bottom:15px;
+	overflow: hidden;
+}
+	
+p.inquiry_text{
+	height:auto;
+	clear:both;
+	margin:0px;
+	width:100%;
+	margin-right:5px;
+	font-weight:bold;
+	text-align:left;
+	margin-left:-10px;
+}
+	
+.inquiry_contents input.text{
+	width:98%;
+	height:30px;
+	font-size:19px;
+	margin-left:3px;
+	margin-right:3px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.inquiry_contents_box{
+	width:100%;
+	height:auto;
+	float:left;
+	overflow: hidden;
+	desplay:block;
+
+}
+
+}
+
+/*---------------------------------------
+ログイン2ページ
+----------------------------------------*/
+
+
+
+.left_contents{
+	width:50%;
+	float:left;
+	height:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.left_contents_title{
+	width:95%;
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#554fb0;
+	height:auto;
+	padding:10px 18px 10px 18px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:25px;
+}
+
+.login2 input.text{
+	width:240px;
+	
+}
+
+.left_contents .auto_login{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.right_contents{
+	width:50%;
+	float:left;
+	height:auto;
+	margin-bottom:50px;
+}
+
+.right_contents_title{
+	width:85%;
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#554fb0;
+	height:auto;
+	padding:10px 18px 10px 18px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:15px;
+}
+
+p.right_text{
+	width:78%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:62px;
+}
+
+
+@media (min-width: 767px) { 
+
+.inquiry_contents.login2 p.inquiry_text{
+	font-size:13px;
+}
+
+.inquiry_contents.login2 input.text{
+	width:44%;
+}
+
+}
+
+@media (max-width: 767px) { 
+
+.left_contents{
+	width:100%;
+	clear:both;
+	height:auto;
+	margin-right:auto;
+	padding-left:2%;
+	padding-right:2%;
+	margin-top:25px;
+	margin-bottom:60px;
+}
+
+.left_contents_title{
+	width:100%;
+	margin-bottom:5px;
+}
+
+.inquiry_contents.login2 input{
+	margin-bottom:25px;
+}
+
+.right_contents{
+	width:100%;
+	clear:both;
+	height:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+.right_contents_title{
+	width:100%;
+}
+
+.login2 input.text{
+	width:98%;
+}
+
+p.right_text{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:62px;
+	font-size:15px;
+	padding-left:10px;
+}
+
+.left_contents .login_button{
+	width:100%;
+}
+
+.right_contents .login_button{
+	width:100%;
+}
+
+}
+
+
+

@@ -1,0 +1,543 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------
+
+-----------------------------------*/
+
+
+.my_contents_flame input{
+	-webkit-transform:scale(1.5);
+	transform:scale(1.5);
+}
+
+.my_contents_flame{
+	padding-bottom:0px;
+}
+
+
+/*-------すべてチェックボタン--------*/
+.all_check{
+	background-color:#E4E4E4;
+	height:auto;
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:15px;
+	padding:10px 0px 10px 10px;
+	text-align:left;
+}
+
+.all_check input{
+	margin-left:5px;
+	margin-right:10px;
+}
+
+@media screen and (max-width: 767px){
+	
+	.all_check{
+		background-color:#fff;
+		padding-top:10px;
+		padding-bottom:20px;
+		padding-left:20px;
+		font-size:16px;
+		margin-bottom:0px;
+	}
+		
+}
+
+/*---------一覧テーブル-------*/
+
+.schedule_list_flame{
+	overflow:hidden;
+	background-color:#fff;
+	width:100%;
+	height:auto;
+	padding:30px 0;
+}
+
+.schedule_list_table{
+	height:auto;
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:16px;
+}
+
+.schedule_list_table td,.schedule_list_table th {
+	padding: 12px 6px;
+	border-right:1px #fff solid;
+	text-align:left;
+	line-height:25px;
+	vertical-align:baseline;
+	vertical-align:middle;
+}
+
+thead tr{
+	background-color:#554fb0;
+	color:#fff;
+	text-align:center;
+}
+
+th.th1{
+	width:4%;
+	text-align:center;
+}
+
+th.th2{
+	width:15%;
+	text-align:center;
+}
+
+th.th3{
+	width:13%;
+	text-align:center;
+}
+
+th.th4{
+	width:9%;
+	text-align:center;
+}
+
+th.th5{
+	width:14%;
+	text-align:center;
+}
+
+th.th6{
+	width:11%;
+	text-align:center;
+}
+
+th.th7{
+	width:17%;
+	text-align:center;
+}
+
+th.th8{
+	width:17%;
+	text-align:center;
+}
+
+th.th9{
+	width:6%;
+	text-align:center;
+}
+
+th.th10{
+	width:15%;
+	text-align:center;
+}
+
+th.th11{
+	width:9%;
+	text-align:center;
+}
+
+
+td.check{
+	text-align:center;
+}
+
+th.right,td.right{
+	border-right:none;
+}
+
+.check_change_box{
+	background-color:#E4E4E4;
+	height:auto;
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px 0px 10px 10px;
+	text-align:left;
+	display: table;
+	border-top:2px #fff solid;
+}
+
+tr:nth-child(2n) {
+    background:#E4E4E4;
+	border-right:1px #fff solid;
+}
+
+tr:nth-child(2n) td{
+	border-right:1px #fff solid;
+}
+
+.bookmark_button{
+	float:left;
+	margin-right:15px;
+}
+
+.bookmark_button.gray{
+	float:right;
+	margin-right:15px;
+}
+
+.comp_text.delete_check{
+	height:auto;
+}
+
+
+
+.book_mark tr:nth-child(2n) {
+    background:#fff;
+	border-right:1px #fff solid;
+}
+
+.book_mark tr:nth-child(2n) td{
+	border-right:1px #E4E4E4 solid;
+}
+
+
+@media screen and (max-width: 767px){
+	
+	.schedule_list_flame{
+		overflow:hidden;
+		background-color:#E4E4E4;
+		width:100%;
+		height:auto;
+		padding:10px 0;
+	}
+	
+	.bookmark_button{
+		float:left;
+		margin-right:0px;
+		margin:10px 0;
+	}
+	
+	.comp_text.delete_check{
+		padding-bottom:15px;
+		margin-bottom:40px;
+	}
+
+	.contents_title a:link,.contents_title a:visited {
+    color:#fff;
+    text-decoration:none;
+	}
+	
+	.contents_title a:hover{
+		color:#999;
+		text-decoration:underline;
+	}
+		
+	.contents_title{
+		width:100%;
+		background-color:#554fb0;
+		color:#fff;
+		font-size:20px;
+		font-weight:bold;
+		padding:10px 10px 10px 25px;
+	}
+	
+	.contents_title input{
+		margin-right:15px;
+	}
+
+	.schedule_list_contents{
+		padding-bottom:40px;
+	}
+	
+	.schedule_list_table{
+		width:95%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.schedule_list_contents td,.schedule_list_contents th{
+		border-right:none;
+		font-size:14px;
+		padding:0px 10px 0px 10px;
+	}
+	
+	.check_change_box{
+		width:100%;
+		padding:30px 5%;
+		margin-left:auto;
+		margin-right:auto;
+		background-color:#E4E4E4;
+		margin-top:20px;
+		margin-bottom:20px;
+		border:none;
+	}
+	
+	.check_change_box img{
+		min-height:40px;
+		width:100%;
+	}
+	
+	th.thsp{
+		width:25%;
+	}
+
+	tr:nth-child(2n) {
+		background:#fff;
+	}
+	
+	tr:nth-child(2n) td{
+	}
+
+}
+
+/*---------ページャー-------*/
+.pager{
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:20px;
+	
+	line-height:29px;
+}
+
+
+
+.count_number{
+	font-size:14px;
+	border:1px #000 solid;
+	padding:2px 5px;
+	margin-left:1px;
+	margin-right:1px;
+	text-decoration:none;
+	background-color:#fff;	
+}
+
+.count_number:hover{
+	text-decoration:underline;
+	color:#FF0004;
+	
+}
+
+.back_next{
+	text-decoration:none;
+	margin-left:15px;
+	margin-right:15px;
+}
+
+.back_next:hover{
+	text-decoration:underline;
+	color:#FF0004;
+}
+
+span.dot{
+	font-size:14px;
+}
+
+
+@media screen and (max-width: 767px){
+
+	.sp_pager{				/*スマホ用ページャー*/
+		display:inline-block;
+		width:100%;
+		text-align:center;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	
+	.sp_pager_back{
+		float:left;
+		max-width:28%;
+		margin-left:10%;
+	}
+	
+	.sp_pager_back img{
+		min-height:35px;
+	}
+
+	.sp_pager_count{
+		font-size:4vw;
+		letter-spacing:0px;
+		width:24%;
+		float:left;
+		padding-top:3%;
+		margin:0px;
+	}
+	
+	.sp_pager_next{
+		float:left;
+		max-width:28%;
+		margin-right:9%;
+	}
+	
+	.sp_pager_next img{
+		min-height:35px;
+	}
+
+
+}
+
+/*-------カレンダー表--------*/
+
+
+.month_title{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px 0;
+}
+
+.month_title span{
+	font-size:26px;
+	font-weight:bold;
+	padding:0 15px;
+}
+
+
+.calendar_flame{
+	background-color:#E4E4E4;
+	margin:0 0 50px 0;
+}
+
+table.calendar{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.calendar tr td{
+	width:140px;
+	height:130px;
+	background-color:#fff;
+	border:2px #929292 solid;
+	overflow:hidden;
+}
+
+
+
+.calendar tr.weet_name td{
+	border:none;
+	height:20px;
+	background-color:#E4E4E4;
+	padding:0 6px 0 6px;
+	font-weight:bold;
+	font-size:16px;
+	position:relative;
+}
+
+.link_flame{
+	position:relative;
+    width:100%;
+	height:100%;
+}
+
+.link_flame:hover{
+	color:#fff;
+	background-color:#bbb;
+}
+
+.link_flame a{
+	position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-indent:-999px;
+}
+
+
+.calendar td p{
+	padding:5px 5px 0 5px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.calendar td ul{
+	text-align:left;
+	padding:5px;
+	font-size:13px;
+}
+
+.calendar td.today{
+	background-color:#fde8e8;
+}
+
+.calendar td.today p{
+	color:#FF0004;
+}
+
+.calendar td.weekend{
+	background-color:#eee;
+}
+
+td.month_out{
+	padding:0;
+}
+
+td.month_out p{
+	color:#999;
+}
+
+td.month_out ul{
+	color:#999;
+}
+
+
+/*----スケジュール詳細画面----*/
+
+.schedule_list_flame.detail{
+	background-color:#E4E4E4;
+}
+
+.schedule_list_flame.detail table{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.schedule_list_flame.detail tr{
+	border:none;
+}
+
+.schedule_list_flame.detail th{
+	width:150px;
+	text-align:left;
+	background-color:#fff;
+	padding:15px;
+	border-top:15px #E4E4E4 solid;
+	border-bottom:15px #E4E4E4 solid;
+}
+
+
+.schedule_list_flame.detail td{
+	padding:15px 15px 15px 50px;
+	border:none;
+}
+
+
+@media screen and (max-width: 767px){
+	.container{
+		margin-bottom:0px;
+	}
+	
+.schedule_list_flame.detail{
+	background-color:#E4E4E4;
+	padding:0 5% 45px 5%;
+}
+
+
+.schedule_list_flame.detail table{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.schedule_list_flame.detail tr{
+	border:none;
+}
+
+.schedule_list_flame.detail th{
+	width:30%;
+	border-top:20px #E4E4E4 solid;
+	border-bottom:20px #E4E4E4 solid;
+}
+
+
+.schedule_list_flame.detail td{
+	padding:15px 0px 15px 15px;
+	border:none;
+	background:#E4E4E4;
+}
+
+	
+}
+

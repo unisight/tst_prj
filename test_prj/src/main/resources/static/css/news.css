@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------
+共通CSS
+------------------------------*/
+html{
+	background-color:#000000;
+}
+
+body{
+	color:#222;
+    width:100%;
+	min-width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+}
+
+.container{
+	width:100%;
+	margin-top:60px;
+	background-color:#fff;
+	height:auto;
+}
+
+@media (max-width: 767px) {
+    body{
+        min-width:100%;
+    }
+	
+		.container{
+		height:auto;
+		margin-top:40px;
+		min-height:50vh;
+	}
+
+}
+
+
+/*--------------------------------
+NEWS一覧
+---------------------------------*/
+.news_title{
+	width:980px;
+	background-color:#554fb0;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.news_title h2{
+	color:#fff;
+	font-size:26px;
+	font-weight:bold;
+	padding:23px 18px 19px 18px;
+}
+
+.news_contents{
+	width:980px;
+	min-height:30vh;
+	line-height:20px;
+	font-size:16px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+}
+
+.news_contents dl{
+	border-bottom:1px #000 dashed;
+	margin:0px;
+	padding:10px 0px 17px 10px;
+	vertical-align:middle;
+}
+
+.news_contents dt{
+	font-weight:bold;
+	color:#000;
+	padding:5px;
+}
+
+.news_contents dd{
+	margin-left:200px;
+	padding:2px 60px 0px 0px;
+}
+
+.news_contents dd p{
+	color:#002e5b;
+	font-weight:bold;
+}
+
+@media screen and (min-width: 768px){
+.news_contents dt{
+	float:left;
+	clear:left;
+	width:200px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+.news_title{
+	width:100%;
+}
+
+.news_title h2{
+	font-size:18px;
+}
+
+.news_contents{
+	width:100%;
+	padding:0 5% 0 5%;
+}
+
+.news_contents dl{
+	border-bottom:none;
+	padding:5px 0px 20px 0px;
+}
+
+.news_contents dt{
+	border-bottom:1px #000 dashed;
+	clear:both;
+	width:auto;
+	margin-bottom:5px;
+}
+
+.news_contents dd{
+	padding:0px 0px 0px 5px;
+	margin:0px;
+}
+
+}
+
+/*------------------------------------
+ニュース詳細ページ
+-------------------------------------*/
+
+.news_text{
+	padding:15px;
+}
+
+
+@media screen and (min-width: 768px){
+.news_contents.detail dt{
+	width:180px;
+}
+
+.news_contents.detail dd{
+	margin-left:180px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+.news_text{
+	padding:15px 0px;
+}
+
+.news_contents.detail dt{
+	border-bottom:none;
+}
+
+.news_contents.detail dl{
+	border-bottom:1px #000 dashed;
+}
+
+}
+

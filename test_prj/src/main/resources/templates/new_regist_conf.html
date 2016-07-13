@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新規会員登録｜就職ナビ+ 【就職ナビプラス】-学生向け就職情報サイト-</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/common/favicon-16x16.ico" sizes="16x16">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/common/favicon-32x32.ico" sizes="32x32">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/common/favicon-96x96.ico" sizes="96x96">
+<meta name="keywords" content="就職ナビ+,就職ナビプラス,新卒,就職,新卒 就活サイト,就職活動,就活,内定,採用,面接,説明会,採用情報,インターンシップ,仕事,会社,企業,活動,求人,2017,企業検索">
+<meta name="description" content="新卒学生・既卒学生のための就職情報サイト「就職ナビ+」では新卒採用情報を掲載しております。企業検索以外にも就活お役立ちコンテンツも盛り沢山。">
+
+<meta property="og:title" content="新規会員登録｜就職ナビ+ 【就職ナビプラス】-学生向け就職情報サイト-" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://xxxxxxxxxxxxxxxx" />
+<meta property="og:image" content="img/common/ogp.jpg" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="css/new_regist.css" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/slicknav.css" />
+
+<script src="js/jquery-2.2.1.min.js"></script>
+
+<script type="text/javascript">
+// responsive
+var s = document.createElement("script");
+s.type = "text/javascript";
+$(function(){
+// Window width default
+var egwidth = $(window).width();
+if (egwidth <= 767) {
+//alert('sp'+egwidth);
+s.src = "./js/sp.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+} else if (egwidth > 768) {
+//alert('pc'+egwidth);
+s.src = "./js/pc.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+// Window width resize with pc
+var timer = false;
+$(window).resize(function() {
+if (timer !== false) {
+clearTimeout(timer);
+}
+timer = setTimeout(function() {
+var egwidth = $(window).width();
+if (egwidth <= 767) {
+s.src = "./js/sp.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+//alert('sp'+egwidth);
+} else if (egwidth > 768) {
+s.src = "./js/pc.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+//alert('pc'+egwidth);
+}
+}, 200);
+});
+});
+</script>
+
+<script src="js/slick.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+
+<script>
+$(function(){
+$('.js-matchHeight').matchHeight();
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="mobile-menu"></div>
+<header id="topHead"  data-role="header" data-position="fixed">
+<h1><a href="index.html"><img src="img/pc/common/logo.png" alt="就職ナビ+　2017"   /></a></h1>
+
+<div class="headrBtn clearfix">
+<div><a href="new_regist.html"><img src="img/pc/common/regist.png" alt="新規会員登  録"/></a></div>
+<div><a href="my_login.html"><img src="img/pc/common/login.png" alt="ログイ  ン"/></a></div>
+</div>
+
+<!--  pcnNav -->
+<div class="menu-container pcOnly">
+<div class="menu">
+<ul>
+<li><a href="#" class="rds"><i class="fa fa-bars">MENU</i></a>
+<ul>
+
+<li><p>企業検索</p>
+<ul>
+<li><a href="search.html">企業検索</a></li>
+</ul>
+</li>
+
+<li><p>会員メニュー</p>
+<ul>
+<li><a href="my_login2.html">スケジュール管理</a></li>
+<li><a href="my_login2.html">連絡帳</a></li>
+<li><a href="my_login2.html">ブックマーク</a></li>
+<li><a href="my_login2.html">会員情報管理</a></li>
+</ul>
+</li>
+
+<li><p>就活支援</p>
+<ul>
+<li><a href="interview.html">就活スケジュール</a></li>
+<li><a href="know.html">就活成功へのステップ</a></li>
+</ul>
+</li>
+
+<li><p>ヘルプ</p>
+<ul>
+<li><a href="guide.html">就職ナビ＋の使い方</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</li>
+
+<li><p>お問い合わせ</p>
+<ul>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</li>
+
+
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!--  /pcnNav -->
+
+<!--  spnNav -->
+<div class="menu-container spOnly">
+<div class="menu">
+<ul>
+
+<li><a href="my_login.html">ログイン</a></li>
+
+<li><a href="new_regist.html">新規会員登録</a></li>
+
+<li><p>企業検索</p>
+<ul>
+<li><a href="search.html">企業検索</a></li>
+</ul>
+</li>
+
+<li><p>会員メニュー</p>
+<ul>
+<li><a href="my_login2.html">スケジュール管理</a></li>
+<li><a href="my_login2.html">連絡帳</a></li>
+<li><a href="my_login2.html">ブックマーク</a></li>
+<li><a href="my_login2.html">会員情報管理</a></li>
+</ul>
+</li>
+
+<li><p>就活支援</p>
+<ul>
+<li><a href="interview.html">就活スケジュール</a></li>
+<li><a href="know.html">就活成功へのステップ</a></li>
+</ul>
+</li>
+
+<li><p>ヘルプ</p>
+<ul>
+<li><a href="guide.html">就職ナビ＋の使い方</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</li>
+
+<li><p>お問い合わせ</p>
+<ul>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+<!--  /spnNav -->
+</header>
+<div class="container">
+<article>
+    <div class="regist_title"><h2>新規会員登録 内容確認</h2></div>
+        <div class="form_flame">
+            <div class="input_box conf">
+            <p class="conf_text">下記の内容でよろしいですか？</p>
+                <form>
+                                        <div class="input_box">
+                        <div class="input_contents">
+                        	<p class="contents_name_area">
+                                <strong>氏名</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            	<span class="float">姓</span>
+                                <span class="anser_text name">就職</span>
+                                <span class="float">名</span>
+                                <span class="anser_text name">太郎</span>
+                            </p>
+                        </div>
+                        <div class="input_contents">
+                        	<p class="contents_name_area">
+                                <strong>フリガナ</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                                <span class="float">セイ</span>
+                                <span class="anser_text name">シュウショク</span>
+                                <span class="float">メイ</span>
+                                <span class="anser_text name">タロウ</span>
+                            </p>
+                        </div>
+                        <div class="input_contents gray">
+                        	<p class="contents_name_area">
+                                <strong>生年月日</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            <span class="anser_text">2015年4月2日</span>
+                            </p>
+                        </div>
+                        <div class="input_contents">
+                        	<p class="contents_name_area">
+                                <strong>郵便番号</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                                <span class="anser_tell">100</span>
+                                <span class="hyphen">-</span>
+                                <span class="anser_tell">6226</span>
+                            </p>
+                         </div>
+                         <div class="input_contents">
+                            <p class="contents_name_area">
+                                <strong>都道府県</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                                <span class="anser_text">東京都</span>
+                            </p>
+                         </div>
+                         <div class="input_contents">
+                            <p class="contents_name_area">
+                                <strong>市区郡町村</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            	<span class="anser_text">千代田区</span>
+                            </p>
+                         </div>
+                         <div class="input_contents">
+                            <p class="contents_name_area">
+                                <strong>番地・号</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            	<span class="anser_text">丸の内1-11-1</span>
+                            </p>
+                         </div>
+                         <div class="input_contents">
+                                <p class="contents_name_area">
+                                    <strong>アパート・<br class="pcOnly">マンション名</strong>
+                                </p>
+                                <p class="contents_anser_area height_adjust">
+                                    <span class="anser_text">○○マンション</span>
+                                </p>
+                        </div>
+                        <div class="input_contents gray">
+                        	<p class="contents_name_area row2 ">
+                                <strong>電話番号</strong>
+                            </p>
+                            <p class="contents_anser_area tell">
+                            <span class="float tell">自宅</span>
+                                <span class="anser_tell fontsize_adjust name">03</span>
+                                <span class="hyphen fontsize_adjust">-</span>
+                                <span class="anser_tell fontsize_adjust">1234</span>
+                                <span class="hyphen fontsize_adjust">-</span>
+                                <span class="anser_tell fontsize_adjust">5678</span>
+                            
+                            <span class="float tell">携帯</span>
+                                <span class="anser_tell fontsize_adjust name">090</span>
+                                <span class="hyphen fontsize_adjust">-</span>
+                                <span class="anser_tell fontsize_adjust">1234</span>
+                                <span class="hyphen fontsize_adjust">-</span>
+                                <span class="anser_tell fontsize_adjust">5678</span>
+                            </p>
+                        </div>
+                        <div class="input_contents gray">
+                        	<p class="contents_name_area">
+                                <strong>メールアドレス</strong>
+                            </p>
+                                <ul class="radio_box">
+                                    <span class="anser_text">shushoku@shushokunaviplus.co.jp</span>
+                                </ul>
+                        </div>
+                        <div class="input_contents">
+                        	<p class="contents_name_area">
+                                <strong>学校区分</strong>
+                            </p>
+                                <ul class="radio_box">
+                                    <span class="anser_text">大学</span>
+                                </ul>
+                        </div>
+                        <div class="input_contents">
+                            <p class="contents_name_area">
+                                <strong>文理区分</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            	<ul class="radio_box">
+                                    <span class="anser_text">文系</span>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="input_contents">
+                            <p class="contents_name_area">
+                                <strong>学校名</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            	<span class="anser_text">○○大学</span>
+                            </p>
+                        </div>
+                        <div class="input_contents">
+                            <p class="contents_name_area">
+                                <strong>学部名</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            	<span class="anser_text">○○学部</span>
+                            </p>
+                        </div>
+                        <div class="input_contents">
+                            <p class="contents_name_area">
+                                <strong>学科名</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                            	<span class="anser_text">○○学科</span>
+                            </p>
+                        </div>
+                        <div class="input_contents gray">
+                            <p class="contents_name_area">
+                            	<strong>希望職種</strong>
+                            </p>
+                            <p class="contents_anser_area tell">
+                            <span class="float job">第一希望</span>
+                                <span class="anser_tell fontsize_adjust name">営業職</span>
+                            <span class="float job">第二希望</span>
+                                <span class="anser_tell fontsize_adjust name">　</span>
+                            <span class="float job">第三希望</span>
+                                <span class="anser_tell fontsize_adjust name">　</span>
+                            </p>
+                        </div>
+                        <div class="input_contents gray">
+                            <p class="contents_name_area">
+                            	<strong>希望業種</strong>
+                            </p>
+                           <p class="contents_anser_area tell">
+                            <span class="float job">第一希望</span>
+                                <span class="anser_tell fontsize_adjust name">メーカー</span>
+                            <span class="float job">第二希望</span>
+                                <span class="anser_tell fontsize_adjust name">　</span>
+                            <span class="float job">第三希望</span>
+                                <span class="anser_tell fontsize_adjust name">　</span>
+                            </p>
+                        </div>
+                        <div class="input_contents gray">
+                            <p class="contents_name_area">
+                            	<strong>希望勤務地</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                                <span class="anser_text">東京</span>
+                            </p>
+                        </div>
+                        <div class="input_contents radio gray">
+                            <p class="contents_name_area">
+                                <strong>希望会社規模</strong>
+                            </p>
+                            <p class="contents_anser_area">
+                                    <ul class="radio_box">
+                                        <span class="anser_text">大手やそのグループ会社</span>
+                                    </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        <div class="two_button">
+        	<p class="pcOnly"><a href="new_regist.html"><img src="img/pc/common/cancel_button.png" alt="修正する"/></a></p>
+    		<p class="pcOnly"><a href="new_regist_complete.html"><img src="img/pc/common/ok_button.png" alt="OK"/></a></p>
+        	<p class="spOnly"><a href="new_regist_complete.html"><img src="img/sp/common/ok_button_sp.png" alt="OK"/></a></p>
+        	<p class="spOnly"><a href="new_regist.html"><img src="img/sp/common/cancel_button_sp.png" alt="修正する"/></a></p>
+    	</div>
+    </div>
+</article>
+</div>
+
+<footer>
+<section class="innr">
+
+
+
+<nav class="clearfix">
+<div>
+<h4><p>■企業検索</p></h4>
+<ul>
+<li><a href="search.html">企業検索</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■会員メニュー</p></h4>
+<ul>
+<li><a href="my_login2.html">スケジュール管理</a></li>
+<li><a href="my_login2.html">連絡帳</a></li>
+<li><a href="my_login2.html">ブックマーク</a></li>
+<li><a href="my_login2.html">会員情報管理</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■就活支援</p></h4>
+<ul>
+<li><a href="interview.html">就活スケジュール</a></li>
+<li><a href="know.html">就活成功へのステップ</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■ヘルプ</p></h4>
+<ul>
+<li><a href="guide.html">就職ナビ＋の使い方</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■お問い合わせ</p></h4>
+<ul>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</div>
+</nav>
+</section>
+
+
+<section class="copyright down">
+
+<nav class="clearfix down2">
+
+<div>
+<ul>
+<li><a href="about.html">運営会社</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="terms.html">利用規約</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="privacy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="sitemap.html">サイトマップ</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="#">企業の採用担当の方はこちら</a></li>
+</ul>
+</div>
+
+</nav>
+
+
+<div class="footerSp spOnly">
+<p><a href="about.html">運営会社</a></p>
+<p><a href="terms.html">利用規約</a></p>
+<p><a href="privacy.html">プライバシーポリシー</a></p>
+<p><a href="sitemap.html">サイトマップ</a></p>
+<p><a href="#">企業担当者の方はこちら</a></p>
+</div>
+
+
+<p>©2016 就職ナビ＋</p>
+</section>
+</footer>
+<div class="pagetop">
+<a href="#wrapper"><img src="img/pc/search_list/top_back.png" alt="上へ戻る" width="64" height="64" /></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1156 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	overflow-x:hidden;
+}
+
+body{
+	width:100%;
+	height:auto;
+	margin-right: auto;
+	margin-left : auto;
+	margin-top:0px;
+	background-attachment:scroll;
+}
+
+
+
+/*---------------------------
+共通
+----------------------------*/
+a:hover img {
+ 	opacity: 0.8;
+}
+
+.search_type_container{
+	margin-top:0px;
+	width:100%;
+	height:auto;
+	overflow-x:hidden;
+}
+
+.search_type_container ul{
+	list-style:none;
+	padding:0;
+}
+
+.search_type_container li{
+	padding:0;
+}
+
+.all_check_button_img{
+	margin-left:1%;
+	margin-right:1%;
+}
+
+img.all_check_button_img{
+	width:48%;
+	padding-top:10px;
+	max-height:60px;
+	min-height:40px;
+	height:auto;
+	margin-top:0px;
+	float:left;
+	padding-left:0%;
+}
+
+.small_category_contents .fa-plus-square-o{
+	margin-left:6%;
+}
+
+.search_type_container input{		/*チェックボックス*/
+	float: left;
+	margin-top:25px;
+	margin-right:9px;
+	margin-left:10px;
+	position:relative;
+	z-index:3;
+}
+
+input[type="checkbox"]{
+	transform: scale(2.5);
+}
+
+.fa-plus-square-o.right{
+	float:right;
+	text-align:right;
+}
+
+.fa-plus-square-o.left{
+	float:left;
+	text-align:left;
+}
+
+
+/*---ヘッダー(業種から探すの部分)---*/
+
+.search_type_header{
+	background-color:#554fb0;
+	max-width:100%;
+	height:160px;
+	color:#fff;
+	font-size:26px;
+}
+
+.search_type_header h3{
+	font-size:26px;
+	padding:20px 0px 0px 15px;
+	height:55px;
+	margin:0px;
+}
+
+
+
+.all_check_button_large{
+	text-align:center;
+}
+
+
+/*-----大項目-----*/
+
+
+.large_category_contents{
+	clear:both;
+	height:67px;
+	width:100%;
+	font-size:26px;
+	color:#333;
+}
+
+.large_category_contents span{
+	position:relative;
+	float:left;
+	padding-top:15px;
+	line-height:25px;
+	font-size:5vw;
+	width:77%;
+	}
+
+
+input.large_checkbox{		/*チェックボックス*/
+	margin-left:30px;
+	position:relative;
+	margin-top:25px;
+	z-index:3;
+	
+}
+
+.click_large{
+	position:absolute;
+	height:67px;
+	width:100%;
+	float:left;
+	z-index:1;
+	cursor:pointer;
+}
+
+.click_large:hover{
+	background-color:#000;
+	cursor:pointer;
+	opacity: 0.3;
+}
+
+.fa-plus-square-o:before{
+	float:left;
+	content: "\f196";
+	font-size:200%;
+	margin:10px 10px 0px 0px;
+}
+
+.fa-plus-square-o.open:before{
+	float:left;
+	content: "\f147";
+	margin:10px 10px 0px 0px;
+	
+}
+
+/*-----中項目-----*/
+.middle_category{
+	float:left;
+	width:100%;
+	margin-left:-2px;
+	display:none;
+}
+
+.middle_categor_box{
+	height:auto;
+}
+
+.all_check_button_middle{
+	clear:both;
+	height:90px;
+	text-align:center;
+	margin-left:-2px;
+	margin-right:-2px;
+}
+
+.middle_category_contents{
+	clear:both;
+	height:67px;
+	width:100%;
+	color:#333;
+	letter-spacing:-2px;
+	margin-left:-2px;
+}
+
+
+.middle_category_contents span{
+	padding-top:15px;
+	padding-left:0px;
+	float:left;
+	font-size:4.5vw;
+	width:75%;
+	text-align:left;
+}
+
+.middle_category_contents p{
+	padding-top:18px;
+	line-height:25px;
+	padding-left:0px;
+	font-size:20px;
+	width:auto;
+}
+
+.click_middle{
+	position:absolute;
+	height:67px;
+	width:100%;
+	z-index:1;
+	cursor:pointer;
+}
+
+
+.click_middle:hover{
+	background-color:#000;
+	cursor:pointer;
+	opacity: 0.3;
+}
+
+.fa-plus-square-o.left:before{
+	clear:both;
+	content: "\f196";
+	margin:10px 20px 0px 10px;
+}
+
+.fa-plus-square-o.left.open:before{
+	float:left;
+	content: "\f147";
+	margin:10px 20px 0px 10px;
+}
+
+
+
+/*-----小項目-----*/
+.small_category{
+	float:left;
+	width:100%;
+	margin-left:-2px;
+	display:none;	
+}
+
+.all_check_button_small{
+	clear:both;
+	height:90px;
+	text-align:center;
+	margin-left:-2px;
+	margin-right:-2px;
+}
+
+.small_category_contents{
+	clear:both;
+	height:67px;
+	width:100%;
+	color:#333;
+	letter-spacing:-2px;
+	margin-left:-2px;
+}
+
+.small_category_contents .fa-plus-square-o:before{
+	float:left;
+	content: "\f196";
+}
+
+.small_category_contents .fa-plus-square-o.open:before{
+	float:left;
+	content: "\f147";
+}
+
+.small_category_contents .fa-plus-square-o{
+	margin-left:6%;
+}
+
+.small_category_contents span{
+	float:left;
+	padding-top:15px;
+	padding-left:0px;
+	font-size:4.5vw;
+	text-align:left;
+	width:70%;
+}
+
+.click_small{
+	position:absolute;
+	height:67px;
+	width:100%;
+	z-index:1;
+	cursor:pointer;
+}
+
+.click_small:hover{
+	background-color:#000;
+	cursor:pointer;
+	opacity: 0.3;
+}
+
+.small_category_contents p{
+	line-height:25px;
+	padding-top:20px;
+	padding-left:0px;
+	font-size:20px;
+	width:auto;
+}
+
+/*-----細分類-----*/
+.subtyping{
+	float:left;
+	display:none;
+	width:100%;
+}
+
+.all_check_button_subtyping{
+	clear:both;
+	height:90px;
+	text-align:center;
+ 	margin-left:-2px;
+    margin-right:-2px;
+
+}
+
+.subtyping_contents{
+	height:65px;
+	width:100%;
+	letter-spacing:-2px;
+	margin-left:-2px;
+}
+
+.positioning{
+	margin: 0px auto;
+	margin-left:20%;
+}
+
+
+.positioning p{
+	width:85%;
+	padding-left:20px;
+	float:left;
+	padding-top:13px;
+	line-height:25px;
+	text-align:left;
+	font-size:4.5vw;
+}
+
+.subtyping_contents input{
+	margin-top:20px;
+}
+
+.page_down{			/*ページ下部へ▼の部分*/
+	float:left;
+	width:100%;
+	height:90px;
+	text-align:center;
+	margin-left:-2px;
+	margin-right:-2px;
+}
+
+.page_down img{
+	width:95%;
+    padding-top:10px;
+	padding-left:2.5%;
+    max-height:60px;
+    min-height:40px;
+    height:auto;
+    margin-top:0px;
+    float:left;
+}
+
+.page_down.middle{
+	background-color:#eee;
+}
+
+
+/*-----フッター-----*/
+
+#search_type_footer{
+	clear:both;
+	width:100%;
+	text-align:center;
+	height:100%;
+	padding:40px 0px;
+}
+
+#search_type_footer img{
+	width:95%;
+	height:auto;
+	min-height:40px;
+}
+
+li{
+	line-height:1.5;
+}
+
+/*--------------------------------------
+業種から探すページ
+--------------------------------------*/
+
+.search_type_header.bussiness{
+	background-color:#554fb0;
+}
+
+.bussiness .large_category{
+	border:2px #554fb0 solid;
+}
+
+.bussiness .large_category_contents{
+	background-color:#bcc7d7;
+	border-top:2px #554fb0 solid;
+}
+
+#search_type_footer.bussiness{
+	background-color:#554fb0;
+}
+
+.bussiness .fa-plus-square-o:before{
+	color:#554fb0;
+	margin:10px 10px 0px 0px;
+}
+
+.bussiness .fa-plus-square-o.open:before{
+	color:#554fb0;
+	margin:10px 10px 0px 0px;
+	
+}
+
+.bussiness .fa-plus-square-o.left:before{
+	color:#554fb0;
+	margin:10px 20px 0px 10px;
+}
+
+.bussiness .fa-plus-square-o.left.open:before{
+	color:#554fb0;
+	margin:10px 20px 0px 10px;
+}
+
+
+.bussiness .middle_category{
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+}
+
+.bussiness .all_check_button_middle{
+	background-color:#bcc7d7;
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+}
+
+
+.bussiness .middle_category_contents{
+	background-color:#eeeeee;
+	border-top:2px #554fb0 solid;
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+}
+
+.bussiness .small_category{
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+}
+
+.bussiness .all_check_button_small{
+	background-color:#eeeeee;
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+}
+
+.bussiness .small_category_contents{
+	background-color:#ccc;
+	border-top:2px #554fb0 solid;
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+}
+
+
+.bussiness .small_category_contents .fa-plus-square-o:before{
+	color:#554fb0;
+	margin-top:10px;
+	margin-right:20px;
+	margin-bottom:0px;
+}
+
+.bussiness .small_category_contents .fa-plus-square-o.open:before{
+	color:#554fb0;
+	margin-top:10px;
+	margin-right:20px;
+	margin-bottom:0px;
+}
+
+.bussiness .all_check_button_subtyping{
+	background-color:#ccc;
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+	border-bottom:2px #554fb0 solid;
+}
+
+.bussiness .subtyping_contents{
+	background-color:#fff;
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+	color:#333;
+}
+
+.bussiness .subtyping_contents:hover{
+	background-color:#ccc;
+}
+
+.bussiness .page_down{			/*ページ下部へ▼の部分*/
+	border-right:2px #554fb0 solid;
+	border-left:2px #554fb0 solid;
+	background-color:#fff;
+}
+
+
+/*-----------------------------------
+職種から探すページ
+------------------------------------*/
+
+.search_type_header.job{
+	background-color:#cd7e1f;
+}
+
+.job .large_category{
+	border:2px #cd7e1f solid;
+}
+
+.job .large_category_contents{
+	background-color:#F5E4D2;
+	border-top:2px #cd7e1f solid;
+}
+
+#search_type_footer.job{
+	background-color:#cd7e1f;
+}
+
+
+.job .fa-plus-square-o:before{	/* + - ボタン */
+	color:#cd7e1f;
+	margin:10px 10px 0px 0px;
+}
+
+.job .fa-plus-square-o.open:before{	/* + - ボタン */
+	color:#cd7e1f;
+	margin:10px 10px 0px 0px;
+	
+}
+
+.job .fa-plus-square-o.left:before{	/* + - ボタン */
+	color:#cd7e1f;
+	margin:10px 20px 0px 10px;
+}
+
+.job .fa-plus-square-o.left.open:before{	/* + - ボタン */
+	color:#cd7e1f;
+	margin:10px 20px 0px 10px;
+}
+
+
+.job .middle_category{
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+}
+
+.job .all_check_button_middle{
+	background-color:#F5E4D2;
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+}
+
+.job .middle_category_contents{
+	background-color:#F4F2E8;
+	border-top:2px #cd7e1f solid;
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;	
+}
+
+.job .small_category_contents p{
+	font-size:4.5vw;
+}
+
+.job .small_category{
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+}
+
+.job .all_check_button_small{
+	background-color:#F4F2E8;
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+}
+
+.job .small_category_contents{
+	background-color:#E3D6C3;
+	border-top:2px #cd7e1f solid;
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+}
+
+.job .small_category_contents .fa-plus-square-o:before{
+	color:#cd7e1f;
+    margin-top:10px;
+    margin-right:20px;
+    margin-bottom:0px;
+
+}
+
+.job .small_category_contents .fa-plus-square-o.open:before{
+	color:#cd7e1f;
+	margin-top:10px;
+    margin-right:20px;
+    margin-bottom:0px;
+
+}
+
+.job .all_check_button_subtyping{
+	background-color:#E3D6C3;
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+	border-bottom:2px #cd7e1f solid;
+
+}
+
+.job .subtyping_contents{
+	background-color:#fff;
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+	color:#333;
+}
+
+.job .page_down{			/*ページ下部へ▼の部分*/
+	border-right:2px #cd7e1f solid;
+	border-left:2px #cd7e1f solid;
+    background-color:#fff;
+}
+
+.job .fa-chevron-right.left{
+	float:left;
+	text-align:left;
+	font-size:100%;
+	color:#cd7e1f;
+	margin:20px 10px 0px 20px;
+}
+
+.job .page_down.small{
+	background-color:#E3D6C3;
+}
+
+/*-----------------------------------
+エリアから探すページ
+------------------------------------*/
+
+.search_type_header.area{
+	background-color:#7e8b2d;
+}
+
+.area .large_category{
+	border:2px #7e8b2d solid;
+}
+
+.area .large_category_contents{
+	background-color:#CAD7C1;
+	border-top:2px #7e8b2d solid;
+}
+
+.area .large_category_contents.under{
+	height:0px;
+}
+
+#search_type_footer.area{
+	background-color:#7e8b2d;
+}
+
+
+.area .fa-plus-square-o:before{	/* + - ボタン */
+	color:#7e8b2d;
+	margin:10px 10px 0px 0px;
+}
+
+.area .fa-plus-square-o.open:before{	/* + - ボタン */
+	color:#7e8b2d;
+	margin:10px 10px 0px 0px;
+	
+}
+
+.area .fa-plus-square-o.left:before{	/* + - ボタン */
+	color:#7e8b2d;
+	margin:10px 20px 0px 10px;
+}
+
+.area .fa-plus-square-o.left.open:before{	/* + - ボタン */
+	color:#7e8b2d;
+	margin:10px 20px 0px 10px;
+}
+
+.area .fa-chevron-right.left{
+	float:left;
+	text-align:left;
+	font-size:100%;
+	color:#7e8b2d;
+	margin:20px 10px 0px 20px;
+}
+
+.area .middle_category{
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+}
+
+.area .all_check_button_middle{
+	background-color:#CAD7C1;
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+}
+
+.area .middle_category_contents{
+	background-color:#eeeeee;
+	border-top:2px #7e8b2d solid;
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+}
+
+.area .middle_category_contents p{
+	font-size:4.5vw;
+}
+
+.area .small_category{
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+}
+
+.area .all_check_button_small{
+	background-color:#eeeeee;
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+}
+
+.area .small_category_contents{
+	background-color:#c5cdb7;
+	border-top:2px #7e8b2d solid;
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+}
+
+.area .small_category_contents .fa-plus-square-o:before{
+	color:#7e8b2d;
+    margin-top:10px;
+    margin-right:20px;
+    margin-bottom:0px;
+}
+
+.area .small_category_contents .fa-plus-square-o.open:before{
+	color:#7e8b2d;
+    margin-top:10px;
+    margin-right:20px;
+    margin-bottom:0px;
+}
+
+.area .all_check_button_subtyping{
+	background-color:#c5cdb7;
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+	border-bottom:2px #7e8b2d solid;
+
+}
+
+.area .subtyping_contents{
+	background-color:#fff;
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+	color:#333;
+}
+
+.area .subtyping_contents:hover{
+	background-color:#ccc;
+}
+
+.area .page_down{			/*ページ下部へ▼の部分*/
+	border-right:2px #7e8b2d solid;
+	border-left:2px #7e8b2d solid;
+
+}
+
+/*-----------------------------------
+従業員数から探すページ
+------------------------------------*/
+
+.search_type_header.employees_number{
+	background-color:#267599;
+}
+
+.employees_number .large_category{
+	border:2px #267599 solid;
+}
+
+.employees_number .large_category_contents{
+	background-color:#bcc7d7;
+	border-top:2px #267599 solid;
+}
+
+#search_type_footer.employees_number{
+	background-color:#267599;
+}
+
+
+.employees_number .fa-plus-square-o:before{	/* + - ボタン */
+	color:#267599;
+	margin:10px 10px 0px 0px;
+}
+
+.employees_number .fa-plus-square-o.open:before{	/* + - ボタン */
+	color:#267599;
+	margin:10px 10px 0px 0px;
+	
+}
+
+.employees_number .fa-plus-square-o.left:before{	/* + - ボタン */
+	color:#267599;
+	margin:10px 20px 0px 10px;
+}
+
+.employees_number .fa-plus-square-o.left.open:before{	/* + - ボタン */
+	color:#267599;
+	margin:10px 20px 0px 10px;
+}
+
+
+.employees_number .middle_category{
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+}
+
+.employees_number .all_check_button_middle{
+	background-color:#bcc7d7;
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+}
+
+.employees_number .middle_category_contents{
+	background-color:#eeeeee;
+	border-top:2px #267599 solid;
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+	
+}
+
+.employees_number .small_category{
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+}
+
+.employees_number .all_check_button_small{
+	background-color:#eeeeee;
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+}
+
+.employees_number .small_category_contents{
+	background-color:#ccc;
+	border-top:2px #267599 solid;
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+}
+
+.employees_number .small_category_contents .fa-plus-square-o:before{
+	color:#267599;
+	margin:10px 20px 0px 60px;
+}
+
+.employees_number .small_category_contents .fa-plus-square-o.open:before{
+	color:#267599;
+	margin:10px 20px 0px 60px;
+}
+
+.employees_number .all_check_button_subtyping{
+	background-color:#ccc;
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+	border-bottom:2px #267599 solid;
+
+}
+
+.employees_number .subtyping_contents{
+	background-color:#fff;
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+	color:#333;
+}
+
+.employees_number .page_down{			/*ページ下部へ▼の部分*/
+	border-right:2px #267599 solid;
+	border-left:2px #267599 solid;
+}
+
+
+/*-----------------------------------
+企業形態から探すページ
+------------------------------------*/
+
+.search_type_header.company_form{
+	background-color:#a0442f;
+}
+
+.company_form .large_category{
+	border:2px #a0442f solid;
+}
+
+.company_form .large_category_contents{
+	background-color:#E1CBBE;
+	border-top:2px #a0442f solid;
+}
+
+#search_type_footer.company_form{
+	background-color:#a0442f;
+}
+
+
+.company_form .fa-plus-square-o:before{	/* + - ボタン */
+	color:#a0442f;
+	margin:10px 10px 0px 0px;
+}
+
+.company_form .fa-plus-square-o.open:before{	/* + - ボタン */
+	color:#a0442f;
+	margin:10px 10px 0px 0px;
+	
+}
+
+.company_form .fa-plus-square-o.left:before{	/* + - ボタン */
+	color:#a0442f;
+	margin:10px 20px 0px 10px;
+}
+
+.company_form .fa-plus-square-o.left.open:before{	/* + - ボタン */
+	color:#a0442f;
+	margin:10px 20px 0px 10px;
+}
+
+
+.company_form .middle_category{
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+}
+
+.company_form .all_check_button_middle{
+	background-color:#E1CBBE;
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+}
+
+.company_form .middle_category_contents{
+	background-color:#F4F2E8;
+	border-top:2px #a0442f solid;
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+	
+}
+
+.company_form .small_category{
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+}
+
+.company_form .all_check_button_small{
+	background-color:#F4F2E8;
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+}
+
+.company_form .small_category_contents{
+	background-color:#D0C4C1;
+	border-top:2px #a0442f solid;
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+}
+
+.company_form .small_category_contents .fa-plus-square-o:before{
+	color:#a0442f;
+	margin:10px 20px 0px 60px;
+}
+
+.company_form .small_category_contents .fa-plus-square-o.open:before{
+	color:#a0442f;
+	margin:10px 20px 0px 60px;
+}
+
+.company_form .all_check_button_subtyping{
+	background-color:#D0C4C1;
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+	border-bottom:2px #a0442f solid;
+
+}
+
+.company_form .subtyping_contents{
+	background-color:#fff;
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+	color:#333;
+}
+
+.company_form .page_down{			/*ページ下部へ▼の部分*/
+	border-right:2px #a0442f solid;
+	border-left:2px #a0442f solid;
+}
+
+
+
+/*-----------------------------------
+特徴から探すページ
+------------------------------------*/
+
+.search_type_header.feature{
+	background-color:#30a67c;
+}
+
+.feature .large_category{
+	border:2px #30a67c solid;
+	height:auto;
+}
+
+.feature .large_category_contents{
+	background-color:#CAD7C1;
+	border-top:2px #30a67c solid;
+}
+
+.large_category_contents span{
+
+}
+
+#search_type_footer.feature{
+	background-color:#30a67c;
+}
+
+
+.feature .fa-plus-square-o:before{	/* + - ボタン */
+	color:#30a67c;
+	margin:10px 10px 0px 0px;
+}
+
+.feature .fa-plus-square-o.open:before{	/* + - ボタン */
+	color:#30a67c;
+	margin:10px 10px 0px 0px;
+	
+}
+
+.feature .fa-plus-square-o.left:before{	/* + - ボタン */
+	color:#30a67c;
+	margin:10px 20px 0px 10px;
+}
+
+.feature .fa-plus-square-o.left.open:before{	/* + - ボタン */
+	color:#30a67c;
+	margin:10px 20px 0px 10px;
+}
+
+
+.feature .middle_category{
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+}
+
+.feature .all_check_button_middle{
+	background-color:#CAD7C1;
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+}
+
+.feature .middle_category_contents{
+	background-color:#F4F2E8;
+	border-top:2px #30a67c solid;
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+	
+}
+
+.feature .small_category{
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+}
+
+.feature .all_check_button_small{
+	background-color:#F4F2E8;
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+}
+
+.feature .small_category_contents{
+	background-color:#c5cdb7;
+	border-top:2px #30a67c solid;
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+}
+
+.feature .small_category_contents .fa-plus-square-o:before{
+	color:#30a67c;
+	margin:10px 20px 0px 60px;
+}
+
+.feature .small_category_contents .fa-plus-square-o.open:before{
+	color:#30a67c;
+	margin:10px 20px 0px 60px;
+}
+
+.feature .all_check_button_subtyping{
+	background-color:#c5cdb7;
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+	border-bottom:2px #30a67c solid;
+
+}
+
+.feature .subtyping_contents{
+	background-color:#fff;
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+	color:#333;
+}
+
+.feature .page_down{			/*ページ下部へ▼の部分*/
+	border-right:2px #30a67c solid;
+	border-left:2px #30a67c solid;
+}
+
+
+@media screen and (max-width: 450px){
+.large_category_contents span{
+	width:57%;
+}
+	
+.middle_category_contents span{
+	width:55%;
+}
+
+.small_category_contents span{
+	width:55%;
+}
+
+.small_category_contents .fa-plus-square-o{
+	margin-left:0%;
+}
+
+.positioning p{
+	width:70%;
+	padding-left:1%;
+}
+
+.positioning{
+	margin-left:2%;
+}
+
+}

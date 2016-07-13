@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/search_type.css">
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<title>エリアから探す</title>
+</head>
+
+<body style="background-color:#7e8b2d;">
+<script>
+// JavaScript Document
+
+$(function(){
+	"use strict";
+	
+	//bclick_large(大項目)要素が押されたとき次の項目(中項目)を開く
+        $(".click_large").click(function(){
+            $(this).nextAll('ul').slideToggle('fast');
+			$(this).prev(".fa-plus-square-o").toggleClass("open");
+        });
+		
+	//click_middle(中項目)要素が押されたとき次の項目(小項目)を開く
+        $(".click_middle").click(function(){
+            $(this).nextAll('ul').slideToggle('fast');
+			$(this).next(".fa-plus-square-o").toggleClass("open");
+        });
+		
+	//click_small(小項目)要素が押されたとき次の項目(細分類)を開く
+        $(".click_small").click(function(){
+            $(this).nextAll('ul').slideToggle('fast');
+			$(this).next(".fa-plus-square-o").toggleClass("open");
+        });
+
+    });
+	
+</script>
+
+<div class="search_type_container">
+    <div class="search_type_header area"><h3>エリアから探す</h3>
+        <div class="all_check_button_large">
+            <a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+            <a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+        </div>
+    </div>
+    <form>
+    <div class="search_type_menu area">
+    	<!------▼大項目------->
+        <ul class="large_category" id="main_menu">
+
+            <li class="large_category_contents">
+            	<input class="large_checkbox" type="checkbox"><span>北海道・東北</span><i class="fa fa-plus-square-o right"></i>
+                <div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="middle_category">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                    
+ 					<li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                        <i class="fa fa-chevron-right left"></i><input type="checkbox"><p>北海道</p></label>
+                    </li> 
+
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>青森県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>岩手県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>宮城県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>秋田県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>山形県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>福島県</p></label>
+                    </li>
+                    
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+            
+            <li class="large_category_contents">
+            	<input class="large_checkbox" type="checkbox"><span>関東</span><i class="fa fa-plus-square-o right"></i>
+                <div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="subtyping">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                     <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>茨城県</p></label>
+                     </li>
+                        
+                     <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>栃木県</p></label>
+                     </li>
+                        
+                     <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>群馬県</p></label>
+                     </li>
+                        
+                     <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>埼玉県</p></label>
+                     </li>
+                        
+                     <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>千葉県</p></label>
+                     </li>
+                        
+                     <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>東京都</p></label>
+                     </li>
+                        
+                     <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>神奈川県</p></label>
+                     </li>
+                        
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+            
+            <li class="large_category_contents">
+            	<input class="large_checkbox" type="checkbox"><span>甲信越・北陸</span><i class="fa fa-plus-square-o right"></i>
+                <div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="subtyping">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>新潟県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>富山県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>石川県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>福井県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>山梨県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>長野県</p></label>
+                    </li>
+                    
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+
+            <li class="large_category_contents">
+            		<input class="large_checkbox" type="checkbox"><span>東海・中部</span><i class="fa fa-plus-square-o right"></i>
+                	<div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="subtyping">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>岐阜県</p></label>
+                    </li>
+                        
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>静岡県</p></label>
+                    </li>
+                        
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>愛知県</p></label>
+                    </li>
+                        
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>三重県</p></label>
+                    </li>
+                        
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+            
+            <li class="large_category_contents">
+            	<input class="large_checkbox" type="checkbox"><span>近畿</span><i class="fa fa-plus-square-o right"></i>
+                <div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="subtyping">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>滋賀県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>京都府</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>兵庫県</p></label>
+                        </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>奈良県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>和歌山県</p></label>
+                    </li>
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+            
+            <li class="large_category_contents">
+            	<input class="large_checkbox" type="checkbox"><span>中国</span><i class="fa fa-plus-square-o right"></i>
+                <div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="subtyping">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>鳥取県</p></label>
+                    </li>
+                    
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>島根県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>岡山県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>広島県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>山口県</p></label>
+                    </li>
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+            
+            <li class="large_category_contents">
+            	<input class="large_checkbox" type="checkbox"><span>四国</span><i class="fa fa-plus-square-o right"></i>
+                <div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="subtyping">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>徳島県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>香川県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>愛媛県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>高知県</p></label>
+                    </li>
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+            
+            <li class="large_category_contents">
+            	<input class="large_checkbox" type="checkbox"><span>九州・沖縄</span><i class="fa fa-plus-square-o right"></i>
+                <div class="click_large"></div>
+                <!------▼中項目------->
+                <ul class="subtyping">
+                	<li class="all_check_button_middle">		<!--■すべて選択、解除メニュー-->
+                    	<a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+                    	<a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>福岡県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>佐賀県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>長崎県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>熊本県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>大分県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>宮崎県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>鹿児島県</p></label>
+                    </li>
+                    <li class="middle_category_contents">
+                    	<label><div class="click_middle"></div>
+                    	<i class="fa fa-chevron-right left"></i><input type="checkbox"><p>沖縄県</p></label>
+                    </li>
+
+                    <li class="page_down middle">
+                    	<a href="#search_type_footer"><img src="img/pc/search_type/page_down_button.png" width="560" height="60" alt="ページ下部へ▼"/></a>
+                 	</li>
+                 </ul>
+            </li>
+            <li class="large_category_contents under">
+            </li>
+        </ul>
+    </div>
+    </form>
+    
+    <div id="search_type_footer" class="area">
+            <a href="#"><img src="img/pc/search_type/area_decision_button.png" width="560" height="60" alt="エリア選択決定"/></a>
+    </div>
+
+</div>
+</body>
+</html>

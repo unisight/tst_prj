@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	color:#222;
+	min-width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.container{
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+}
+
+@media screen and (max-width: 767px){
+	
+	body{
+		min-width:100%;
+		height:auto;
+	}
+	
+	.container{
+		margin-bottom:20px;
+	}
+	
+}
+
+/*-------○○さんの～の部分-------*/
+
+.my_name_area{
+	height:auto;
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:0px;
+	padding-bottom:50px;
+	font-size:23px;
+	font-weight:bold;
+	color:#002e5b;
+}
+
+
+
+@media screen and (max-width: 767px){
+	.my_name_area{
+		width:95%;
+		padding-top:5px;
+		padding-bottom:20px;
+		margin-left:auto;
+		margin-right:auto;
+		font-size:18px;
+	}
+}
+
+
+
+/*-------ブロック要素～タイトル部分-------*/
+
+
+.my_contents_flame{ 	/*スケジュールリストBOX*/
+	height:auto;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:30px;
+	background-color:#E4E4E4;
+}
+
+.my_title{
+	height:auto;
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+	padding-bottom:30px;
+	font-size:30px;
+	font-weight:bold;
+	color:#002e5b;
+	letter-spacing:3px;
+	line-height:23px;
+}
+
+.my_title i.fa{
+	font-size:35px;
+	letter-spacing:10px;
+}
+
+
+.my_contents{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+@media screen and (max-width: 767px){
+	
+	.my_contents_flame{ 	/*スケジュールリストBOX*/
+		height:auto;
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:15px;
+		background-color:#E4E4E4;
+	}
+
+	.my_title i.fa{
+		font-size:26px;
+		letter-spacing:10px;
+	}
+	
+	.my_title{
+		width:95%;
+		margin-left:auto;
+		margin-right:auto;
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size:20px;
+	}	
+	
+	.my_contents{
+	width:100%;
+	padding:0 5%;
+	}
+}
+

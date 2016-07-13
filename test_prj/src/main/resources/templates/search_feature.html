@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/search_type.css">
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<title>特徴から探す</title>
+</head>
+
+<body style="background-color:#30a67c;">
+<script>
+// JavaScript Document
+
+$(function(){
+	"use strict";
+	
+	//bclick_large(大項目)要素が押されたとき次の項目(中項目)を開く
+        $(".click_large").click(function(){
+            $(this).nextAll('ul').slideToggle('fast');
+			$(this).prev(".fa-plus-square-o").toggleClass("open");
+        });
+		
+	//click_middle(中項目)要素が押されたとき次の項目(小項目)を開く
+        $(".click_middle").click(function(){
+            $(this).nextAll('ul').slideToggle('fast');
+			$(this).next(".fa-plus-square-o").toggleClass("open");
+        });
+		
+	//click_small(小項目)要素が押されたとき次の項目(細分類)を開く
+        $(".click_small").click(function(){
+            $(this).nextAll('ul').slideToggle('fast');
+			$(this).next(".fa-plus-square-o").toggleClass("open");
+        });
+
+    });
+	
+</script>
+
+<div class="search_type_container">
+    <div class="search_type_header feature"><h3>特徴から探す</h3>
+        <div class="all_check_button_large">
+            <a href="#"><img src="img/pc/search_type/select_all_button_green.png" width="275" height="60" alt="すべて選択" class="all_check_button_img"/></a>
+            <a href="#"><img src="img/pc/search_type/release_button_green.png" width="276" height="60" alt="解除" class="all_check_button_img"/></a>
+        </div>
+    </div>
+    <form>
+    <div class="search_type_menu feature">
+    	<!------▼大項目------->
+        <ul class="large_category" id="main_menu">
+
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>外資系企業</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>海外出張あり</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>独立・支援制度あり</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>資格取得をサポート</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>年間休日125日以上</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>完全週休2日制</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>フレックスタイム制導入</span>
+                <div class="click_large"></div></label>
+            </li>
+
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>3年連続売上高ＵＰ</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>若手の管理職登用実績あり</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>社員平均年齢20歳代</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>年俸制など実力主義的給与体制</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>ストックオプション・社員持ち株制度あり</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+            <li class="large_category_contents">
+            	<label><input class="large_checkbox" type="checkbox"><span>寮・社宅完備</span>
+                <div class="click_large"></div></label>
+            </li>
+            
+        </ul>
+    </div>
+    </form>
+    
+    <div id="search_type_footer" class="feature">
+            <a href="#"><img src="img/pc/search_type/feature_decision_button.png" width="560" height="60" alt="特徴選択決定"/></a>
+    </div>
+
+</div>
+</body>
+</html>

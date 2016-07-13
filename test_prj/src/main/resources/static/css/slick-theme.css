@@ -1,0 +1,380 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('../img/pc/common/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot7#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+	position: absolute;
+    display: block;
+    width:22px;
+    height:58px;
+	z-index:190;
+	cursor: pointer;
+}
+
+@media (max-width: 767px) { 
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+	position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+	z-index:190;
+	cursor: pointer;
+	width:3%;
+}
+
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    content:"";
+}
+
+.slick-prev
+{
+	top:10%;
+	float:left;
+	height:80%;
+	left:0;
+	margin:0;
+	padding:0;
+}
+[dir='rtl'] .slick-prev
+{
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '';
+}
+
+.slick-next
+{
+	top:10%;
+	right:0;
+	float:right;
+	height:80%;
+	margin:0;
+	padding:0;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '';
+}
+
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+	bottom: 5%;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+
+
+
+
+
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+button img {
+  display: block;
+}
+
+
+.slick_container {
+    width:980px; /* 任意の値 */
+    margin:0 auto; /* 任意の値 */
+    position:relative;
+}
+@media (max-width: 767px) { 
+.slick_container {
+    width:93%; /* 任意の値 */
+    margin:0 auto; /* 任意の値 */
+    position:relative;
+}
+}
+
+
+/* 新着企業用
+------------------------------------------------------------*/
+
+.crsl{
+	width:980px;
+	padding:0 0 0 0;
+}	
+
+.crsl h4{
+	font-weight:bold;
+	font-size:24px;
+}
+
+.crsl h4,.crsl p{
+	width:256px;
+}
+
+.crsl .slick-list{
+	margin:0 0 0 50px;
+}
+
+
+
+
+section.comp .crsl ul{
+	bottom: -15%;
+}
+
+@media (max-width: 767px) { 
+.crslSP{
+	width:100%;
+	padding:0 3% 0 0;
+}	
+
+.crslSP h4{
+	font-weight:bold;
+	font-size:24px;
+}
+
+.crslSP .slick-list .slick-track .slick-slide{
+	margin:0 0 0 0.5%;
+}
+
+.crslSP h4, .crslSP h4 p{
+	width:256px;
+}
+
+.crslSP .slick-list{
+	margin:0 3% 0 5% ;
+}
+
+section.comp .crslSP ul{
+	bottom: -25%;
+}
+}
+
+
+/* bnrL用
+------------------------------------------------------------*/
+ .bnrLBox{
+	 width:100%;
+	 background-color:#dddddd;
+	 padding:40px 0;
+ }
+ 
+  .bnrL{
+	  width:660px;
+	  margin:0 auto;
+	  padding:0 0 0 30px;
+  }
+  
+  @media (max-width: 767px) { 
+  .bnrLBox{
+	  padding-top:20px;
+  }
+  
+   .bnrL{
+	  width:100%;
+	  margin:0 auto;
+	  padding:0 0 0 0;
+  }
+  .bnrL .slick-list .slick-track .slick-slide{
+  }
+}
+  
+section.bnrLBox .bnrL ul{
+	bottom: -30px;
+	left:0px;
+}
+
+
+/* bnrS用
+------------------------------------------------------------*/
+
+.bnrSbox{
+	width:980px;
+	padding:0 0 0 0;
+}	
+
+.bnrSbox h4,.bnrSbox p{
+	width:256px;
+}
+
+.bnrSbox .slick-list{
+	margin:0 0 0 50px;
+}
+
+section.bnrSbox .bnrS ul{
+	bottom: -40%;
+}
+
+
+@media (max-width: 767px) { 
+.bnrSbox{
+	width:100%;
+	padding:0 0 0 0;
+}	
+
+.bnrSbox h4,.bnrSbox h4 p{
+	width:256px;
+}
+
+.bnrSbox .slick-list{
+	margin:0 5% 0 3% ;
+}
+
+.bnrS .slick-list .slick-track .slick-slide{
+	margin:0 0 0 0.5%;
+}
+
+section.bnrSbox .bnrS ul{
+	bottom: -40%;
+}
+
+}
+
+
+
+@media (max-width: 767px) { 
+.mv .spOnly img{
+	width:100%;
+}
+}

@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------
+共通
+---------------------------*/
+
+html{
+	background-color:#000000;
+}
+
+body{
+	color:#222;
+    width:100%;
+	min-width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+}
+
+img{
+
+}
+
+img.photo{
+	height:225px;
+	width:300px;
+}
+
+.container{
+	width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:60px;
+	
+}
+
+@media (max-width: 767px) {
+    body{
+        min-width:100%;
+		background-color:#fff;
+		height:auto;
+	}
+	
+	.container{
+		margin-top:40px;
+		width:100%;
+		height:auto;
+		min-height:50vh;
+	}
+	
+}
+
+
+/*-----------------------------------
+受付完了ページ全般
+------------------------------------*/
+
+.comp_contents{
+	position:relative;
+	width:980px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	padding:25px;
+}
+
+.comp_title{
+	width:980px;
+	background-color:#554fb0;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.comp_title h2{
+	color:#fff;
+	font-size:26px;
+	font-weight:bold;
+	padding:23px 18px 19px 18px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.comp_title{
+	text-align:left;
+}
+
+.comp_text{
+	height:130px;
+	font-size:16px;
+	color:#000;
+}
+
+
+
+@media (max-width: 767px) { 
+
+body{
+	min-width:100%;
+}
+
+
+.comp_title{
+	width:100%;
+}
+
+.comp_title h2{
+	font-size:18px;
+}
+
+.comp_text{
+	height:auto;
+	margin-left:0px;
+}
+
+.comp_contents{
+	width:100%;
+	padding:5%;
+}
+
+
+
+}
+
+
+/*----------------------------------
+新規会員登録メールアドレス確認用
+--------------------------------*/
+.comp_text.mail{
+	height:50px;
+}
+
+.conf_contents_before{
+	width:150px;
+	float:left;
+	border:none;
+	border-right:none;
+	padding:11px 15px 11px 0px;
+	text-align:right;
+	font-weight:bold;
+	background-color:#ddd;
+	color:#002e5b;
+}
+
+.conf_contents_after{
+	width:770px;
+	float:left;
+	border:none;
+	padding-top:8px;
+	padding-bottom:7px;
+	padding-left:20px;
+	background-color:#eee;
+}
+
+dl.mail_frame{
+	height:120px;
+	display:block;
+	overflow:hidden;
+}
+
+@media (max-width: 767px) {
+
+p.comp_text.mail{
+	display:block;
+	height:auto;
+	margin-bottom:15px;
+}
+
+dl.mail_frame{
+	height:auto;
+	display:block;
+	overflow:hidden;
+}
+
+dt.conf_contents_before{
+	width:100%;
+	float:left;
+	background-color:#eee;
+	border:none;
+	padding-top:10px;
+	padding-bottom:5px;
+	padding-left:10px;
+	text-align:left;
+	font-weight:bold;
+	font-size:16px;
+}
+
+dd.conf_contents_after{
+	width:100%;
+	clear:both;
+	border:none;
+	background-color:#eee;
+	padding-top:0px;
+	padding-bottom:8px;
+	padding-left:10px;
+	padding-right:10px;
+	word-wrap: break-word;
+}
+
+}

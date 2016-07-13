@@ -1,0 +1,1139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Myページ　スケジュール、エントリー一覧｜就職ナビ+ 【就職ナビプラス】-学生向け就職情報サイト-</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/common/favicon-16x16.ico" sizes="16x16">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/common/favicon-32x32.ico" sizes="32x32">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/common/favicon-96x96.ico" sizes="96x96">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<meta property="og:title" content="Myページ　スケジュール、エントリー一覧｜就職ナビ+ 【就職ナビプラス】-学生向け就職情報サイト-" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://xxxxxxxxxxxxxxxx" />
+<meta property="og:image" content="img/common/ogp.jpg" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/my_style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="css/my_entry.css" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/slicknav.css" />
+
+<script src="js/jquery-2.2.1.min.js"></script>
+
+<script type="text/javascript">
+// responsive
+var s = document.createElement("script");
+s.type = "text/javascript";
+$(function(){
+// Window width default
+var egwidth = $(window).width();
+if (egwidth <= 767) {
+//alert('sp'+egwidth);
+s.src = "./js/sp.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+} else if (egwidth > 768) {
+//alert('pc'+egwidth);
+s.src = "./js/pc.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+// Window width resize with pc
+var timer = false;
+$(window).resize(function() {
+if (timer !== false) {
+clearTimeout(timer);
+}
+timer = setTimeout(function() {
+var egwidth = $(window).width();
+if (egwidth <= 767) {
+s.src = "./js/sp.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+//alert('sp'+egwidth);
+} else if (egwidth > 768) {
+s.src = "./js/pc.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+//alert('pc'+egwidth);
+}
+}, 200);
+});
+});
+</script>
+
+<script src="js/slick.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+
+<script>
+$(function(){
+$('.js-matchHeight').matchHeight();
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="mobile-menu"></div>
+<header id="topHead"  data-role="header" data-position="fixed">
+<h1><a href="index.html"><img src="img/pc/common/logo.png" alt="就職ナビ+　2017"   /></a></h1>
+
+<div class="headrBtn clearfix">
+<div><a href="logout.html"><img src="img/pc/common/logout.png" alt="ログアウ  ト"/></a></div>
+</div>
+
+<!--  pcnNav -->
+<div class="menu-container pcOnly">
+<div class="menu">
+<ul>
+<li><a href="#" class="rds"><i class="fa fa-bars">MENU</i></a>
+<ul>
+
+<li><p>企業検索</p>
+<ul>
+<li><a href="search.html">企業検索</a></li>
+</ul>
+</li>
+
+<li><p>会員メニュー</p>
+<ul>
+<li><a href="my_entry.html">スケジュール管理</a></li>
+<li><a href="my_inbox.html">連絡帳</a></li>
+<li><a href="my_bookmark.html">ブックマーク</a></li>
+<li><a href="my_regist.html">会員情報管理</a></li>
+</ul>
+</li>
+
+<li><p>就活支援</p>
+<ul>
+<li><a href="interview.html">就活スケジュール</a></li>
+<li><a href="know.html">就活成功へのステップ</a></li>
+</ul>
+</li>
+
+<li><p>ヘルプ</p>
+<ul>
+<li><a href="guide.html">就職ナビ＋の使い方</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</li>
+
+<li><p>お問い合わせ</p>
+<ul>
+<li><a href="my_contact_form.html">お問い合わせ</a></li>
+</ul>
+</li>
+
+
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!--  /pcnNav -->
+
+<!--  spnNav -->
+<div class="menu-container spOnly">
+<div class="menu">
+<ul>
+
+<li><a href="logout.html">ログアウト</a></li>
+
+<li><p>企業検索</p>
+<ul>
+<li><a href="search.html">企業検索</a></li>
+</ul>
+</li>
+
+<li><p>会員メニュー</p>
+<ul>
+<li><a href="my_entry.html">スケジュール管理</a></li>
+<li><a href="my_inbox.html">連絡帳</a></li>
+<li><a href="my_bookmark.html">ブックマーク</a></li>
+<li><a href="my_regist.html">会員情報管理</a></li>
+</ul>
+</li>
+
+<li><p>就活支援</p>
+<ul>
+<li><a href="interview.html">就活スケジュール</a></li>
+<li><a href="know.html">就活成功へのステップ</a></li>
+</ul>
+</li>
+
+<li><p>ヘルプ</p>
+<ul>
+<li><a href="guide.html">就職ナビ＋の使い方</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</li>
+
+<li><p>お問い合わせ</p>
+<ul>
+<li><a href="my_contact_form.html">お問い合わせ</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+<!--  /spnNav -->
+</header>
+
+<div class="container">
+    <article>
+        <form>
+            <div class="my_name_area">就職　太郎さんのスケジュール一覧</div>
+            <div class="my_contents_flame">
+                <div class="my_title"><i class="fa fa-calendar"></i>スケジュール一覧</div>
+                
+                <!--スケジュールカレンダー-->
+                <div class="calendar_flame pcOnly">
+                    <div class="month_title">
+                        <a href="">＜前月</a>
+                        <span>6月</span>
+                        <a href="">次月＞</a>
+                    </div>
+                    <table class="calendar">
+                        <tr class="weet_name">
+                            <td>月</td>
+                            <td>火</td>
+                            <td>水</td>
+                            <td>木</td>
+                            <td>金</td>
+                            <td>土</td>
+                            <td>日</td>
+                        </tr>
+                        <tr class="week1">
+                            <td class="month_out">	<!--前の月-->
+                                <div class="link_flame">
+                                    <a href="my_entry_detail.html">リンク</a>
+                                    <p>5月29日</p>
+                                    <ul>
+                                        <li>【会社説明会】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都中央区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="month_out">	<!--前の月-->
+                                <p>5月30日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="month_out">	<!--前の月-->
+                                <p>5月31日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <div class="link_flame">
+                                    <a href="my_entry_detail.html">リンク</a>
+                                    <p>1日</p>
+                                    <ul>
+                                        <li>【会社説明会】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都中央区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <p>2日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend">
+                                <p>3日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend">
+                                <p>4日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <tr class="week2">
+                            <td>
+                                <div class="link_flame">
+                                        <a href="my_entry_detail.html">リンク</a>
+                                    <p>5日</p>
+                                    <ul>
+                                        <li>【会社説明会】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都港区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="today">
+                                <div class="link_flame">
+                                        <a href="my_entry_detail.html">リンク</a>
+                                    <p>6日</p>
+                                    <ul>
+                                        <li>【会社説明会】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都新宿区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <p>7日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <p>8日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <div class="link_flame">
+                                        <a href="my_entry_detail.html">リンク</a>
+                                    <p>9日</p>
+                                    <ul>
+                                        <li>【会社説明会】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都新宿区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="weekend">
+                                <p>10日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend">
+                                <p>11日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <tr class="week3">
+                            <td>
+                                <p>12日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <div class="link_flame">
+                                    <a href="my_entry_detail.html">リンク</a>
+                                    <p>13日</p>
+                                    <ul>
+                                        <li>【筆記試験】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都中央区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <p>14日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <p>15日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <p>16日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend">
+                                <p>17日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend">
+                                <p>18日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="week4">
+                            <td>
+                                <div class="link_flame">
+                                    <a href="my_entry_detail.html">リンク</a>
+                                    <p>19日</p>
+                                     <ul>
+                                        <li>【会社説明会】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都港区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="link_flame">
+                                    <a href="my_entry_detail.html">リンク</a>
+                                    <p>20日</p>
+                                    <ul>
+                                        <li>【一次面接】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都港区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <p>21日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <div class="link_flame">
+                                    <a href="my_entry_detail.html">リンク</a>
+                                    <p>22日</p>
+                                    <ul>
+                                        <li>【会社説明会】</li>
+                                        <li>・開催時間</li>
+                                        <li>　10:00 ～ 12:00</li>
+                                        <li>・開催地</li>
+                                        <li>　東京都新宿区</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <p>23日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend">
+                                <p>24日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend">
+                                <p>25日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="week5">
+                            <td>
+                                <p>26日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <p>27日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td>
+                            <div class="link_flame">
+                                <a href="my_entry_detail.html">リンク</a>
+                                <p>28日</p>
+                                <ul>
+                                    <li>【筆記試験】</li>
+                                    <li>・開催時間</li>
+                                    <li>　10:00 ～ 12:00</li>
+                                    <li>・開催地</li>
+                                    <li>　東京都中央区</li>
+                                </ul>
+                            </div>
+                            </td>
+                            <td>
+                            <div class="link_flame">
+                                <a href="my_entry_detail.html">リンク</a>
+                                <p>29日</p>
+                                <ul>
+                                    <li>【二次面接】</li>
+                                    <li>・開催時間</li>
+                                    <li>　10:00 ～ 12:00</li>
+                                    <li>・開催地</li>
+                                    <li>　東京都港区</li>
+                                </ul>
+                            </div>
+                            </td>
+                            <td>
+                            <div class="link_flame">
+                                <a href="my_entry_detail.html">リンク</a>
+                                <p>30日</p>
+                                <ul>
+                                    <li>【会社説明会】</li>
+                                    <li>・開催時間</li>
+                                    <li>　10:00 ～ 12:00</li>
+                                    <li>・開催地</li>
+                                    <li>　東京都新宿区</li>
+                                </ul>
+                            </div>
+                            </td>
+
+                            <td class="weekend month_out">
+                                <p>7月1日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td class="weekend month_out">
+                                <p>7月2日</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                
+                
+                <div class="schedule_list_flame">
+                
+                    <div class="all_check">
+                    <label><input type="checkbox">すべてチェック</label>
+                    </div>                
+                
+                    <table class="schedule_list_table pcOnly">			<!--pc用スケジュール一覧テーブル-->
+                        <thead>
+                            <tr>
+                                <th class="th1"></th>
+                                <th class="th2">会社名▲</th>
+                                <th class="th3">実施内容▲</th>
+                                <th class="th4">日付▲</th>
+                                <th class="th5">時間</th>
+                                <th class="th6">開催地▲</th>
+                                <th class="th7">持ち物</th>
+                                <th class="th8 right">メモ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">会社説明会</a></td>
+                                <td>2016/06/01</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都中央区</td>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">会社説明会</a></td>
+                                <td>2016/06/05</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都港区</td>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">会社説明会</a></td>
+                                <td>2016/06/06</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都新宿区</td>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">会社説明会</a></td>
+                                <td>2016/06/09</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都新宿区</td>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">筆記試験</a></td>
+                                <td>2016/06/13</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都中央区</td>
+                                <td></td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">会社説明会</a></td>
+                                <td>2016/06/19</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都港区</td>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">一次面接</a></td>
+                                <td>2016/06/20</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都港区</td>
+                                <td></td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">会社説明会</a></td>
+                                <td>2016/06/22</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都新宿区</td>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">筆記試験</a></td>
+                                <td>2016/06/28</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都中央区</td>
+                                <td></td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">二次面接</a></td>
+                                <td>2016/06/29</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都港区</td>
+                                <td></td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="check"><input type="checkbox"></td>
+                                <td><a href="my_entry_detail.html">株式会社○○○○</a></td>
+                                <td><a href="my_entry_detail.html">会社説明会</a></td>
+                                <td>2016/06/30</td>
+                                <td>10:00 ～ 12:00</td>
+                                <td>東京都新宿区</td>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                                <td class="right"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+
+                    
+                    <div class="check_change_box pcOnly">
+                        <a class="pcOnly" href="#"><img src="img/pc/my_entry/check_change_button.png" alt="チェックしたものを変更する"/></a>
+                    </div>
+                    
+                    
+                    <div class="pager pcOnly">			<!--PC用ページャー-->
+                        <a class="back_next" href="#">＜前へ</a>
+                        <a class="count_number" href="#">1</a>
+                        <a class="count_number" href="#">2</a>
+                        <a class="count_number" href="#">3</a>
+                        <a class="count_number" href="#">4</a>
+                        <a class="count_number" href="#">5</a>
+                        <a class="count_number" href="#">6</a>
+                        <a class="count_number" href="#">7</a>
+                        <a class="count_number" href="#">8</a>
+                        <a class="count_number" href="#">9</a>
+                        <a class="count_number" href="#">10</a>
+                        <span class="dot">・・・</span>
+                        <a class="count_number" href="#">15</a>
+                        <a class="back_next" href="#">次へ＞</a>
+                    </div>
+
+<!--ここからSP用コンテンツ-->
+
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="123456789entry.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>会社説明会</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/01</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都中央区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>                   
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>会社説明会</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/05</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都港区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>会社説明会</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/06</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都新宿区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>会社説明会</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/09</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都新宿区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>筆記試験</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/13</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都中央区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>会社説明会</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/19</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都港区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>一次面接</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/20</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都港区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>会社説明会</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/22</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都新宿区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>筆記試験</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/28</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都中央区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>二次面接</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/29</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都港区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="schedule_list_contents spOnly">			<!--sp用スケジュール一覧テーブル-->
+                        <div class="contents_title"><input type="checkbox"><a href="my_entry_detail.html">株式会社○○○○</a></div>
+                        <table class="schedule_list_table spOnly">
+                            <tr>
+                                <th class="thsp">実施内容</th>
+                                <td>会社説明会</td>
+                            </tr>
+                            <tr>
+                                <th>日付</th>
+                                <td>2016/06/30</td>
+                            </tr>
+                            <tr>
+                                <th>時間</th>
+                                <td>10:00 ～ 12:00</td>
+                            </tr>
+                            <tr>
+                                <th>場所</th>
+                                <td>東京都新宿区</td>
+                            </tr>
+                            <tr>
+                                <th>持ち物</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>メモ</th>
+                                <td>筆記用具、履歴書(写真貼り付)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+				    <div class="check_change_box spOnly">
+                        <a class="spOnly" href="#"><img src="img/sp/search_list/check_change_button_sp.png" alt="チェックしたものを変更する"/></a>
+                    </div>
+                    
+                    <div class="sp_pager spOnly">		<!--スマホ用ページャー-->
+                        <div class="sp_pager_back"><a href="#"><img src="img/sp/my_entry/sp_next_button.png" alt=""/></a></div>
+                        <div class="sp_pager_count">1/15</div>
+                        <div class="sp_pager_next"><a href="#"><img src="img/sp/my_entry/sp_back_button.png" alt=""/></a></div>
+                    </div>
+                    
+<!--SP用コンテンツここまで-->
+                    
+              </div>
+                
+                </div>
+                </form>
+                </article>
+            </div>
+
+</div>
+<footer>
+<section class="innr">
+
+
+
+<nav class="clearfix">
+<div>
+<h4><p>■企業検索</p></h4>
+<ul>
+<li><a href="search.html">企業検索</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■会員メニュー</p></h4>
+<ul>
+<li><a href="my_entry.html">スケジュール管理</a></li>
+<li><a href="my_inbox.html">連絡帳</a></li>
+<li><a href="my_bookmark.html">ブックマーク</a></li>
+<li><a href="my_regist.html">会員情報管理</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■就活支援</p></h4>
+<ul>
+<li><a href="interview.html">就活スケジュール</a></li>
+<li><a href="know.html">就活成功へのステップ</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■ヘルプ</p></h4>
+<ul>
+<li><a href="guide.html">就職ナビ＋の使い方</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</div>
+
+<div>
+<h4><p>■お問い合わせ</p></h4>
+<ul>
+<li><a href="my_contact_form.html">お問い合わせ</a></li>
+</ul>
+</div>
+</nav>
+</section>
+
+
+<section class="copyright down">
+
+<nav class="clearfix down2">
+
+<div>
+<ul>
+<li><a href="about.html">運営会社</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="terms.html">利用規約</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="privacy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="sitemap.html">サイトマップ</a></li>
+</ul>
+</div>
+
+<div>
+<ul>
+<li><a href="#">企業の採用担当の方はこちら</a></li>
+</ul>
+</div>
+
+</nav>
+
+
+<div class="footerSp spOnly">
+<p><a href="about.html">運営会社</a></p>
+<p><a href="terms.html">利用規約</a></p>
+<p><a href="privacy.html">プライバシーポリシー</a></p>
+<p><a href="sitemap.html">サイトマップ</a></p>
+<p><a href="#">企業担当者の方はこちら</a></p>
+</div>
+
+
+<p>©2016 就職ナビ＋</p>
+</section>
+</footer>
+<div class="pagetop">
+<a href="#wrapper"><img src="img/pc/search_list/top_back.png" alt="上へ戻る" width="64" height="64" /></a>
+</div>
+</body>
+</html>
